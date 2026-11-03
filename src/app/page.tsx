@@ -1,69 +1,144 @@
-import Image from "next/image";
+import Link from "next/link";
+import UsMap from "@/components/UsMap";
+import SourceNote from "@/components/SourceNote";
+import { LATEST_YEAR, YEARS, fmt, nationalDeaths, pointFor, states } from "@/lib/data";
+import { MAP_H, MAP_W } from "@/lib/geo";
+import { getMapStates } from "@/lib/mapdata";
+
+function daysIn(year: number) {
+  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? 366 : 365;
+}
 
 export default function Home() {
+  const total = nationalDeaths(LATEST_YEAR);
+  const perDay = Math.round(total / daysIn(LATEST_YEAR));
+  const peak = Math.max(...YEARS.map(nationalDeaths));
+  const peakYear = YEARS.find((y) => nationalDeaths(y) === peak)!;
+
+  const ranked = states
+    .map((s) => ({ s, p: pointFor(s, LATEST_YEAR) }))
+    .filter((r) => r.p?.rate != null)
+    .sort((a, b) => b.p!.rate! - a.p!.rate!);
+  const top = ranked.slice(0, 5);
+  const bottom = ranked.slice(-5).reverse();
+  const ratio = top[0].p!.rate! / bottom[0].p!.rate!;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <section className="hero wrap">
+        <p className="kicker">Gun deaths in the United States</p>
+        <h1>
+          In {LATEST_YEAR}, <span className="big-number-inline">{fmt.int(total)}</span> people in the U.S. died from
+          gun injuries.
+        </h1>
+        <p className="lead">
+          That is about <strong>{perDay} people every day</strong>. The number has gone down since the peak in{" "}
+          {peakYear} ({fmt.int(peak)} deaths), but it is still about {fmt.int(Math.round((total - nationalDeaths(2014)) / 1000) * 1000)}{" "}
+          more deaths per year than in 2014.
+        </p>
+
+        <div className="stats">
+          <div className="stat">
+            <div className="stat-value">{fmt.int(total)}</div>
+            <div className="stat-label">gun deaths in {LATEST_YEAR}</div>
+          </div>
+          <div className="stat">
+            <div className="stat-value">~{perDay}</div>
+            <div className="stat-label">deaths per day, on average</div>
+          </div>
+          <div className="stat">
+            <div className="stat-value">{fmt.int(nationalDeaths(2014))}</div>
+            <div className="stat-label">gun deaths in 2014, for comparison</div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <SourceNote />
+      </section>
+
+      <section className="section wrap narrow">
+        <h2>Most gun deaths are not murders</h2>
+        <p>
+          When people hear &quot;gun deaths,&quot; they often think of murders or mass shootings. But{" "}
+          <strong>more than half of all gun deaths in the U.S. are suicides</strong>, according to the CDC (2022
+          data).
+        </p>
+        <p>The total number of gun deaths is made up of several types. Each death is counted only once:</p>
+        <ul>
+          <li><strong>Suicide</strong>: a person uses a gun to end their own life.</li>
+          <li><strong>Homicide</strong>: one person kills another person with a gun.</li>
+          <li><strong>Accident</strong> (unintentional): for example, a child finds a loaded gun.</li>
+          <li><strong>Police shooting</strong> (&quot;legal intervention&quot;): a death caused by law enforcement.</li>
+          <li><strong>Unknown</strong> (undetermined): investigators could not tell what happened.</li>
+        </ul>
+        <p className="callout">
+          Suicides and homicides are <em>parts</em> of the total, not extra deaths on top of it.
+        </p>
+        <p className="muted">
+          Coming soon: the exact split for every state and year, from CDC&apos;s detailed database.
+        </p>
+      </section>
+
+      <section className="section wrap" id="map">
+        <h2>How do states compare?</h2>
+        <p className="narrow">
+          The map shows the <strong>gun death rate</strong>: how many people died from guns for every 100,000
+          people living in the state. Using a rate lets us compare big states and small states fairly. Darker
+          purple means a higher rate. Click a state to learn more.
+        </p>
+        <UsMap shapes={getMapStates()} years={YEARS} width={MAP_W} height={MAP_H} />
+      </section>
+
+      <section className="section wrap">
+        <h2>Big differences between states</h2>
+        <p className="narrow">
+          In {LATEST_YEAR}, the gun death rate in {top[0].s.name} was about{" "}
+          <strong>{Math.round(ratio)} times higher</strong> than in {bottom[0].s.name}. These numbers show{" "}
+          <em>where</em> rates are high. They do not, on their own, explain <em>why</em>. States differ in many
+          ways, such as how many people own guns, how rural they are, income, age of residents, and their laws.
+        </p>
+        <div className="cards">
+          <div className="card">
+            <h3>Highest rates, {LATEST_YEAR}</h3>
+            <ol>
+              {top.map(({ s, p }) => (
+                <li key={s.code}>
+                  <Link prefetch={false} href={`/states/${s.code.toLowerCase()}/`}>{s.name}</Link>: {fmt.rate(p!.rate!)}
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="card">
+            <h3>Lowest rates, {LATEST_YEAR}</h3>
+            <ol>
+              {bottom.map(({ s, p }) => (
+                <li key={s.code}>
+                  <Link prefetch={false} href={`/states/${s.code.toLowerCase()}/`}>{s.name}</Link>: {fmt.rate(p!.rate!)}
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="card">
+            <h3>Gun laws by state</h3>
+            <p>Background checks, permits, waiting periods and more: see how the rules change across state lines.</p>
+            <p><Link prefetch={false} href="/laws/">Explore state gun laws →</Link></p>
+          </div>
+          <div className="card">
+            <h3>How we got here</h3>
+            <p>A timeline of gun laws and court decisions, from the Second Amendment in 1791 to today.</p>
+            <p><Link prefetch={false} href="/history/">See the timeline →</Link></p>
+          </div>
+          <div className="card">
+            <h3>You be the judge</h3>
+            <p>Decide five real Supreme Court gun cases, then see what the justices actually ruled.</p>
+            <p><Link prefetch={false} href="/judge/">Start with case 1 →</Link></p>
+          </div>
+          <div className="card">
+            <h3>Compare states yourself</h3>
+            <p>Pick up to four states and see how their rates changed over time.</p>
+            <p><Link prefetch={false} href="/compare/">Open the comparison tool →</Link></p>
+          </div>
         </div>
-      </main>
-    </div>
+        <p className="muted">Rates are gun deaths per 100,000 people, age-adjusted.</p>
+      </section>
+    </>
   );
 }

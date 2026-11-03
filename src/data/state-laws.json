@@ -1,0 +1,5993 @@
+{
+ "meta": {
+  "source": "RAND State Firearm Law Database, version 6.0 (January 2026)",
+  "asOf": "September 1, 2025",
+  "sourceUrl": "https://www.rand.org/pubs/tools/TLA243-2-v4.html",
+  "citation": "Hoch, Emily, Amy Nabel, Gregory Weider Fauerbach, Andrew R. Morral, Terry L. Schell, and Sierra Smucker, Development of the RAND State Firearm Law Database and Supporting Materials, RAND Corporation, TL-A243-2-v4, 2026.",
+  "license": "Open Data Commons Open Database License (ODbL); noncommercial use; attribution required.",
+  "changes": "We kept only laws in force, removed repealed laws, and grouped RAND's law categories into one plain-language status per state for six topics. RAND's statute citations and notes are shown unchanged.",
+  "retrieved": "2026-11-01"
+ },
+ "policies": [
+  {
+   "id": "bgcheck",
+   "title": "Background checks for private sales",
+   "question": "If you buy a gun from another private person (not a store), does state law require a background check?",
+   "explain": "Federal law already requires licensed gun dealers to run a background check. It does not require one when one private person sells to another. Some states add that requirement.",
+   "statuses": [
+    {
+     "id": "all",
+     "label": "Required for all guns"
+    },
+    {
+     "id": "handgun",
+     "label": "Required for handguns only"
+    },
+    {
+     "id": "limited",
+     "label": "Required only in some situations"
+    },
+    {
+     "id": "none",
+     "label": "Not required by state law"
+    }
+   ]
+  },
+  {
+   "id": "carry",
+   "title": "Carrying a concealed handgun",
+   "question": "Do you need a permit to carry a hidden handgun in public?",
+   "explain": "Permitless states let adults who may legally own a gun carry it hidden without a permit. In shall-issue states you need a permit, and officials must give it to you if you meet the rules. In may-issue states, officials have more choice.",
+   "statuses": [
+    {
+     "id": "may",
+     "label": "Permit needed; officials have some choice"
+    },
+    {
+     "id": "shall",
+     "label": "Permit needed; given if you meet the rules"
+    },
+    {
+     "id": "permitless",
+     "label": "No permit needed"
+    }
+   ]
+  },
+  {
+   "id": "waiting",
+   "title": "Waiting periods",
+   "question": "After you buy a gun, do you have to wait some days before you can take it home?",
+   "explain": "There is no federal waiting period. Some states require one. In some other states you first need a permit to buy, which takes time to get.",
+   "statuses": [
+    {
+     "id": "days",
+     "label": "Waiting period required"
+    },
+    {
+     "id": "defacto",
+     "label": "No set wait, but a permit is needed first"
+    },
+    {
+     "id": "none",
+     "label": "No waiting period"
+    }
+   ]
+  },
+  {
+   "id": "age",
+   "title": "Minimum age to buy a rifle or shotgun",
+   "question": "How old do you have to be to buy a rifle or shotgun?",
+   "explain": "Federal law says licensed dealers may not sell handguns to anyone under 21, or rifles and shotguns to anyone under 18. Some states set their own minimum age. If a state law has a big exception, RAND records the lower age the exception allows.",
+   "statuses": [
+    {
+     "id": "21",
+     "label": "21"
+    },
+    {
+     "id": "18",
+     "label": "18 to 20"
+    },
+    {
+     "id": "under18",
+     "label": "Under 18 (because of exceptions)"
+    },
+    {
+     "id": "none",
+     "label": "No state law (federal rules apply)"
+    }
+   ]
+  },
+  {
+   "id": "erpo",
+   "title": "Red flag laws",
+   "question": "Can a court order guns to be taken away from someone who is a danger to themselves or others?",
+   "explain": "These laws are officially called extreme risk protection orders. A court decides whether a person is a serious risk, and can order their guns removed for a limited time. In some states only police can ask the court, while in others family members can ask too.",
+   "statuses": [
+    {
+     "id": "expanded",
+     "label": "Yes; police and others (like family) can ask"
+    },
+    {
+     "id": "police",
+     "label": "Yes; only police can ask"
+    },
+    {
+     "id": "none",
+     "label": "No red flag law"
+    }
+   ]
+  },
+  {
+   "id": "storage",
+   "title": "Safe storage and children",
+   "question": "Does state law say how guns must be stored to keep them away from children?",
+   "explain": "Some states require all guns to be stored safely. Others punish careless storage if a child could get the gun. Some only make it illegal to knowingly give a gun to a child.",
+   "statuses": [
+    {
+     "id": "always",
+     "label": "Guns must always be stored safely"
+    },
+    {
+     "id": "child",
+     "label": "Penalty if careless storage lets a child get a gun"
+    },
+    {
+     "id": "intent",
+     "label": "Only knowingly giving a gun to a child is illegal"
+    },
+    {
+     "id": "none",
+     "label": "No state law"
+    }
+   ]
+  }
+ ],
+ "states": {
+  "AK": {
+   "name": "Alaska",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "AK1004",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2003-09-09",
+       "notYetInEffect": false,
+       "citation": "Permit-less CCW allowed through change to Alaska Stat. § 11.61.220; Permit rules described in Alaska Stat. § 18.65.700 et seq.",
+       "note": "Permitting system maintained for residents seeking reciprocity with other states or \"those who seek to be exempt from background checks when purchasing additional firearms\" (\"Concealed Weapons Permitting,\" Giffords Law Center to Prevent Gun Violence, undated).",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "AK1011",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1992-09-14",
+       "notYetInEffect": false,
+       "citation": "Alaska Stat. § 11.61.210",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "AK1016",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1992-09-14",
+       "notYetInEffect": false,
+       "citation": "Alaska Stat. § 11.61.210",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "AL": {
+   "name": "Alabama",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "AL1053",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2023-01-01",
+       "notYetInEffect": false,
+       "citation": "Ala. Code § 13A-11-85",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "AL1011",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1936-10-01",
+       "notYetInEffect": false,
+       "citation": "Ala. Code §§ 13A-11-57; 13A-11-76",
+       "note": "2015 statutory amendments added exceptions listed in Ala. Code § 13A-11-72(f) & (g) include hunting, target shooting, self defense against home intruders. Since 2015, unclear what definition of \"minor\" is in Alabama for purposes of gun laws.",
+       "discrepancy": "Not included on the Giffords Law Center to Prevent Gun Violence (undated) website.",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "AR": {
+   "name": "Arkansas",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "AR1052",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2021-08-31",
+       "notYetInEffect": false,
+       "citation": "Ark. Code Ann. §§ 5-73-101 (10); Ark. Code Ann. §§ 5-73-120(c)(4)",
+       "note": "Defines \"journey\" to be any travel outside of the home",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "AR1010",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1976-01-01",
+       "notYetInEffect": false,
+       "citation": "Ark. Code Ann. § 5-73-109",
+       "note": "\"Minor\" defined as under 18 by Ark. Code Ann. § 5-73-101.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "AR1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1976-01-01",
+       "notYetInEffect": false,
+       "citation": "Ark. Code Ann. § 5-73-109",
+       "note": "\"Minor\" defined as under 18 by Ark. Code Ann. § 5-73-101.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "AZ": {
+   "name": "Arizona",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "AZ1007",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2010-07-29",
+       "notYetInEffect": false,
+       "citation": "Ariz. Rev. Stat. § 13-3102(A)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "AZ1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1953-04-01",
+       "notYetInEffect": false,
+       "citation": "Ariz. Rev. Stat. § 13-3109(A)",
+       "note": "Ariz. Rev. Stat. § 1-215(21) defines minor as under 18.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "AZ1023",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1953-04-01",
+       "notYetInEffect": false,
+       "citation": "Ariz. Rev. Stat. § 13-3109(A)",
+       "note": "Ariz. Rev. Stat. § 1-215(21) defines minor as under 18.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "CA": {
+   "name": "California",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CA1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "1991-01-01",
+       "notYetInEffect": false,
+       "citation": "Cal. Penal Code § 12072(d) (pre-2012); Cal. Penal Code §§ 27545, 28050 et seq. (post 2012)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CA1040",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "1991-01-01",
+       "notYetInEffect": false,
+       "citation": "Cal. Penal Code § 12072(d) (pre-2012); Cal. Penal Code §§ 27545, 28050 et seq. (post 2012)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CA1107",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-06-23",
+       "notYetInEffect": false,
+       "citation": "NEW YORK STATE RIFLE & PISTOL ASSN., INC. v. BRUEN",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CA1118",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2024-01-01",
+       "notYetInEffect": false,
+       "citation": "Cal Penal Code § 26150",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "10 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "CA1037",
+       "category": "waiting period: general",
+       "guns": "long gun",
+       "effective": "1997-04-01",
+       "notYetInEffect": false,
+       "citation": "Cal. Penal Code § 27540",
+       "note": "Adds long guns. Originally enacted as Cal. Pen. Code § 12072(c )(1) (1998).",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "CA1047",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "1997-04-01",
+       "notYetInEffect": false,
+       "citation": "Cal. Penal Code § 27540",
+       "note": "Adds long guns. Originally enacted as Cal. Pen. Code § 12072(c )(1) (1998).",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "21",
+     "detail": "Handguns: 21 · Rifles/shotguns: 21",
+     "evidence": [
+      {
+       "lawId": "CA1022",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1990-12-30",
+       "notYetInEffect": false,
+       "citation": "Cal. Penal Code § 27505",
+       "note": "Before 2012, reference was Cal. Penal Code §12072(a)(3)(A).",
+       "discrepancy": "Disagreement with Vernick and Hepburn (2003) about year of enactment, age limit.",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CA1049",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2019-01-01",
+       "notYetInEffect": false,
+       "citation": "Penal Code § 27510(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CA1064",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2016-01-01",
+       "notYetInEffect": false,
+       "citation": "Cal. Penal Code § 18150",
+       "note": "ERPOs are called Gun Violence Restraining Orders (GVROs) in California",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CA1065",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2016-01-01",
+       "notYetInEffect": false,
+       "citation": "Cal. Penal Code § 18150",
+       "note": "ERPOs are called Gun Violence Restraining Orders (GVROs) in California",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CA1011",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1992-01-01",
+       "notYetInEffect": false,
+       "citation": "Cal Pen Code § 25100",
+       "note": "Citation originally Cal Pen Code § 12035(b),(d), reorganized in 2010 to Cal Pen § 25100; amended in 2013 to add 3rd degree (loaded firearm kept on premises, etc., regardless of whether a child accessed firearm or not); amended in 2013 to also include persons prohibiting from possessing firearm, in addition to children; amended in 2019 to include injury to the person improperly keeping firearm, in addition to others.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "CO": {
+   "name": "Colorado",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CO1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2013-07-01",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-112",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CO1025",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2013-07-01",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-112",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CO1008",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2003-05-17",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-203",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "3 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "CO1084",
+       "category": "waiting period: general",
+       "guns": "handgun and long gun",
+       "effective": "2023-10-01",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-115",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "3"
+      }
+     ]
+    },
+    "age": {
+     "status": "21",
+     "detail": "Handguns: 21 · Rifles/shotguns: 21",
+     "evidence": [
+      {
+       "lawId": "CO1016",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1993-09-13",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-108.7",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CO1071",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1993-09-13",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-108.7",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CO1072",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2023-08-07",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-112(2)(e), (f)",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CO1073",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2023-08-07",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. § 18-12-112(2)(e), (f)",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CO1037",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2019-01-12",
+       "notYetInEffect": false,
+       "citation": "CO § 13-14.5-104",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CO1038",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2020-01-01",
+       "notYetInEffect": false,
+       "citation": "CO § 13-14.5-103",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CO1077",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2023-04-28",
+       "notYetInEffect": false,
+       "citation": "CO § 13-14.5-104",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CO1064",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2021-07-01",
+       "notYetInEffect": false,
+       "citation": "Colo. Rev. Stat. §§ 18-12-114",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "CT": {
+   "name": "Connecticut",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CT1002",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "1994-10-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-33",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CT1040",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "1995-10-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-33",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CT1090",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1995-10-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-33",
+       "note": "Originally was found in Conn. Gen. Stat. § 29-36j(a)",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CT1001",
+       "category": "background checks: permit to purchase",
+       "guns": "long gun",
+       "effective": "2014-04-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-37a(c)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CT1091",
+       "category": "permit to purchase: required",
+       "guns": "long gun",
+       "effective": "2014-04-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-37a(c)",
+       "note": "Long gun eligibility certificate required.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CT1008",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "1969-01-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-28(b)",
+       "note": "Connecticut's concealed-carry law is  ambiguous and subject to different interpretations. In 1969, Connecticut established a Handgun Review Board to minimize arbitrary denials of permit applications. Sources such as Grossman and Lee (2008), and Ayres and Donohue (2009) consider 1969 to be the year Connecticut became \"shall issue\" in practice. We ultimately agreed, but note that Vernick and Hepburn (2003) characterize the law as remaining \"may issue,\" and the NRA characterizes Connecticut's law as \"reasonable/discretionary issue.\"\n\nOn June 23, 2022, the Supreme Court ruled in New York State Rifle & Pistol Association v. Bruen that \nwhile Connecticut, Delaware, and Rhode Island have laws with discretionary criteria, because they “appear to operate like ‘shall issue’ jurisdictions” and are therefore not unconstitutional.  “Although Connecticut officials have discretion to deny a concealed-carry permit to anyone who is not a ‘suitable person,’ see Conn. Gen. Stat. §29–28(b), the ‘suitable person’ standard precludes permits only to those ‘individuals whose conduct has shown them to be lacking the essential character or temperament necessary to be entrusted with a weapon.’”  As such, the Bruen decision did not reqjuire any real changes in rules or operations of the permitting system, but is recorded here to reflect that the Supreme Court concluded that any discretionary elements of the states law that might be considered a feature of a “may issue” state, are not unconstitutional.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "Rifles/shotguns: 14 days",
+     "evidence": [
+      {
+       "lawId": "CT1024",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "1995-10-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-33",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "CT1035",
+       "category": "waiting period: general",
+       "guns": "long gun",
+       "effective": "2014-04-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-37a(g)",
+       "note": "As of April 1, 2014, waiting periods were replaced with waiting period de facto due to a permit to purchase requirement. Specific to sales without permits from dealers.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "14"
+      },
+      {
+       "lawId": "CT1025",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "long gun",
+       "effective": "2014-04-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-37a(c)",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for long guns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "CT1019",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1994-10-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-34(b)",
+       "note": "See also Conn. Gen. Stat. § 29-36f(a): Any person who is twenty-one years of age or older may apply to the Commissioner of Emergency Services and Public Protection for an eligibility certificate for a pistol or revolver.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CT1021",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2013-04-04",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. § 29-37a(b)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CT1042",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "1999-10-01",
+       "notYetInEffect": false,
+       "citation": "CONN. GEN. STAT. § 29-38c",
+       "note": "Indiana, like Connecticut, call their laws \"Risk Based Firearm Removal Laws.\" The key difference is that risk based firearm removal laws are implemented when the subject of the removal order already owns a firearm. However, both laws also include prohibitions about possessing a firearm while the order is in effect, essentially creating a scenario where the subject of the order could not legally purchase a firearm. ERPO laws state that the order can be served even if the person does not already own a firearm.\n\nHave not identified copy of actual bill.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "CT1097",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2022-06-01",
+       "notYetInEffect": false,
+       "citation": "CONN. GEN. STAT. § 29-38c",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "CT1011",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1990-10-01",
+       "notYetInEffect": false,
+       "citation": "Conn. Gen. Stat. §§ 29-37i; 53a-217a",
+       "note": "2019 amendment deleted reference to \"loaded\" firearm.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "DC": {
+   "name": "District of Columbia",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DC1001",
+       "category": "background checks: permit to purchase",
+       "guns": "long gun",
+       "effective": "1976-09-24",
+       "notYetInEffect": false,
+       "citation": "D.C. Code Ann. § 7-2502.03",
+       "note": "Registration certificate required for all purchases, involves background check.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DC1073",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1976-09-24",
+       "notYetInEffect": false,
+       "citation": "DC ST §§  7-2502.01,7-2502.03.",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DC1074",
+       "category": "permit to purchase: required",
+       "guns": "long gun",
+       "effective": "1976-09-24",
+       "notYetInEffect": false,
+       "citation": "DC ST §§  7-2502.01,7-2502.03.",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DC1049",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "2008-06-26",
+       "notYetInEffect": false,
+       "citation": "D.C. v Heller  554 U.S. 570 (2008)",
+       "note": "Normally a permit to purchase law would be considered \"restrictive.\" Since this permit to purchase police replaced a total ban on handguns, here is considered \"permissive.\"",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DC1065",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-06-23",
+       "notYetInEffect": false,
+       "citation": "NEW YORK STATE RIFLE & PISTOL ASSN., INC. v. BRUEN",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "10 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "DC1027",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "1976-09-24",
+       "notYetInEffect": false,
+       "citation": "DC ST §§  7-2502.01,7-2502.03.",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "DC1028",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "long gun",
+       "effective": "1976-09-24",
+       "notYetInEffect": false,
+       "citation": "DC ST §§  7-2502.01,7-2502.03.",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for long guns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "DC1020",
+       "category": "waiting period: general",
+       "guns": "long gun",
+       "effective": "2009-10-22",
+       "notYetInEffect": false,
+       "citation": "D.C. Code § 22-4508",
+       "note": "Expanded waiting period from handguns to all firearms.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "DC1026",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "2009-10-22",
+       "notYetInEffect": false,
+       "citation": "D.C. Code § 22-4508",
+       "note": "Expanded waiting period from handguns to all firearms.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "DC1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1953-06-29",
+       "notYetInEffect": false,
+       "citation": "D.C. Code Ann. § 22-4507",
+       "note": "1953 code section was D.C. Code Ann. §  22-3207.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DC1031",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1976-09-24",
+       "notYetInEffect": false,
+       "citation": "DC ST § 7-2507.06(a)(1)",
+       "note": "Original text of law was about registration certificate for purchase. Allowed people age 18-21 to purchase firearm if accompanied by notarized statement by parents or guardian.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "police",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DC1035",
+       "category": "prohibited possessor: erpo",
+       "guns": "handgun and long gun",
+       "effective": "2019-06-19",
+       "notYetInEffect": false,
+       "citation": "DC ST § 7-2510.01",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DC1036",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2019-06-19",
+       "notYetInEffect": false,
+       "citation": "DC ST § 7-2510.04",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DC1005",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1976-09-24",
+       "notYetInEffect": false,
+       "citation": "D.C. Code Ann. § 7-2507.02",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "DE": {
+   "name": "Delaware",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DE1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2013-07-01",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 11, § 1448B(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DE1026",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2013-07-01",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 11, § 1448B(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DE1074",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "2025-11-16",
+       "notYetInEffect": false,
+       "citation": "DE ST TI 11 § 1448A",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "may",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DE1005",
+       "category": "carrying a concealed weapon (ccw): may issue",
+       "guns": "handgun",
+       "effective": "1893-01-01",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 11, §§ 1441, 1442",
+       "note": "On June 23, 2022, the Supreme Court’s decision in New York State Rifle & Pistol Association, Inc. v. Bruen, 597 U.S. ____ (2022) determined that “may issue” concealed carry laws were unconstitutional, though they explicitly stated that Delaware, Connecticut and Rhode Island’s versions of “may issue” laws were not unconstitutional. As such, this database treats all states but Delaware, Connecticut and Rhode Island as having “shall issue” concealed carry laws as of June 23, 2022.",
+       "discrepancy": "Delaware's concealed-carry law is ambiguous and subject to different interpretations. \n\nOn June 23, 2022, the Supreme Court ruled in New York State Rifle & Pistol Association v. Bruen that \nwhile Connecticut, Delaware, and Rhode Island have laws with discretionary criteria they “appear to operate like ‘shall issue’ jurisdictions” and are therefore not unconstitutional.  As such, this “law change” does not entail any real changes in rules or operations of the permitting system, but is recorded here to reflect that the Supreme Court concluded that any discretionary elements of the states law that might be considered a feature of a “may issue” state, are not unconstitutional. In the case of Deleware, the court stated in a footnote that although DE includes discretionary criteria: \"the state has thus far processed 5,680 license applications and renewals in fiscal year 2022 and has denied only 112. See Del. Courts, Super. Ct., Carrying Concealed Deadly Weapon (June 9, 2022), https://courts.delaware.gov/ forms/download.aspx?ID=125408. Moreover, Delaware appears to have no licensing requirement for open carry.\" Neither of these explanations for why DE's law is constitutional bear on the question of whether DE allows discretion in the decision to award CCW permits, so we retain the \"may issue\" designation for this law.",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "21",
+     "detail": "Handguns: 21 · Rifles/shotguns: 21",
+     "evidence": [
+      {
+       "lawId": "DE1015",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1987-07-16",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 24, §§ 901, 903",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DE1077",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2022-06-30",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 11, §§ 1445(4), 1448(a)(5)",
+       "note": "Section 1448 excepts shotguns (as defined in § 1444(c)) and muzzle-loading rifles (as defined in § 704(f)",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DE1078",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2022-06-30",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 11, § 1445(4)",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DE1036",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2018-12-27",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 10, § 7701, 7704",
+       "note": "An ERPO in DE is called a \"Lethal Violence Protection Order\" in DE: (3) \"Lethal violence protective order\" means an order issued by the Justice of the Peace Court or Superior Court prohibiting and enjoining a person from controlling, owning, purchasing, possessing, having access to, or receiving a firearm.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "DE1037",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2018-12-27",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 10, § 7703",
+       "note": "An ERPO in DE is called a \"Lethal Violence Protection Order\" in DE: (3) \"Lethal violence protective order\" means an order issued by the Justice of the Peace Court or Superior Court prohibiting and enjoining a person from controlling, owning, purchasing, possessing, having access to, or receiving a firearm.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "DE1008",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1994-07-12",
+       "notYetInEffect": false,
+       "citation": "Del. Code Ann. tit. 11, § 1456(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "FL": {
+   "name": "Florida",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "FL1063",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2023-07-01",
+       "notYetInEffect": false,
+       "citation": "Fla. Stat. § 790.01",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "3 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "FL1020",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "1991-10-01",
+       "notYetInEffect": false,
+       "citation": "Fla. Stat. § 790.0655(1)(a)",
+       "note": "As of 1998, Florida Constitution. art. I, § 8(b) also allows counties to impose a \"3 to 5-day waiting period.\"",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "3"
+      },
+      {
+       "lawId": "FL1033",
+       "category": "waiting period: general",
+       "guns": "long gun",
+       "effective": "2018-03-09",
+       "notYetInEffect": false,
+       "citation": "Florida Statutes Ch 790 Sec 0655",
+       "note": "This law will extend the waiting period if all specified background checks are not completed in three days.  Some sales are exempt from the waiting period law, including purchases by people with hunting licenses, law enforcement officers, and servicemembers.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "3"
+      }
+     ]
+    },
+    "age": {
+     "status": "21",
+     "detail": "Handguns: 21 · Rifles/shotguns: 21",
+     "evidence": [
+      {
+       "lawId": "FL1031",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2018-03-09",
+       "notYetInEffect": false,
+       "citation": "Fla. Stat. § 790.065(13)",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "FL1032",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2018-03-09",
+       "notYetInEffect": false,
+       "citation": "Fla. Stat. § 790.065(13)",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "police",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "FL1038",
+       "category": "prohibited possessor: erpo",
+       "guns": "handgun and long gun",
+       "effective": "2018-07-01",
+       "notYetInEffect": false,
+       "citation": "Fla. Stat. § 790.401",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "FL1039",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2018-07-01",
+       "notYetInEffect": false,
+       "citation": "Fla. Stat. § 790.401(4)(a)",
+       "note": "In urgent cases, a court may issue an emergency temporary ERPO, prior to providing notice and holding a hearing, if the court finds reasonable cause based on detailed allegations in the ERPO petition that the respondent poses a significant danger of causing personal injury to himself or herself or others in the near future by having in his or her custody or control, or by purchasing, possessing, or receiving, a firearm or ammunition. The temporary ERPO will generally only be in effect for up to 14 days, before the court holds a full hearing on whether to grant a longer ERPO",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "FL1010",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1989-10-01",
+       "notYetInEffect": false,
+       "citation": "Fla. Stat. §§ 784.05, 790.174",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "GA": {
+   "name": "Georgia",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "GA1062",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2022-04-12",
+       "notYetInEffect": false,
+       "citation": "Ga. Code § 16-11-126 (f)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "GA1019",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1994-04-11",
+       "notYetInEffect": false,
+       "citation": "Ga. Code Ann. § 16-11-101.1(b)",
+       "note": "Ga. Code Ann. § § 16-11-101.1(a)(1) defines \"minor\" as under 18.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "GA1011",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun",
+       "effective": "1994-05-01",
+       "notYetInEffect": false,
+       "citation": "Ga. Code Ann § 16-11-101.1(c,d)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "HI": {
+   "name": "Hawaii",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "HI1001",
+       "category": "background checks: permit to purchase",
+       "guns": "long gun",
+       "effective": "1927-07-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "HI1035",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "1927-07-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "HI1101",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1927-07-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "HI1100",
+       "category": "permit to purchase: required",
+       "guns": "long gun",
+       "effective": "1981-06-24",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-3",
+       "note": "Adds long guns back to permit requirement.",
+       "discrepancy": "Vernick and Hepburn (2003) say this was enacted in 1988; we think it was 1981.",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "HI1084",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-06-23",
+       "notYetInEffect": false,
+       "citation": "NEW YORK STATE RIFLE & PISTOL ASSN., INC. v. BRUEN",
+       "note": "The Supreme court decision in Bruen determined that their restrictive permitting laws involving law enforcement discretion in the provision of permits was unconstitutional, so from June 23, 2022, Massachusetts has been making changes to their law that will bring it into compliance with the Bruen decision.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "HI1105",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2024-01-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. § 134-9",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "Handguns: 14 days · Rifles/shotguns: 10 days",
+     "evidence": [
+      {
+       "lawId": "HI1041",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "1927-07-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(a)",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "HI1042",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "long gun",
+       "effective": "1927-07-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(a)",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for long guns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "HI1026",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "long gun",
+       "effective": "1981-06-24",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-3",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for long guns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "Vernick and Hepburn (2003) say this was enacted in 1988; we think it was 1981.",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "HI1029",
+       "category": "waiting period: general",
+       "guns": "long gun",
+       "effective": "1988-06-09",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(e) (1991)",
+       "note": "The waiting period requirement does not apply to buyers who have received a permit within the past year.",
+       "discrepancy": "Vernick and Hepburn (2003) say this is a handgun law, but we think the law has always referred to firearms in general.",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "HI1028",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "1992-06-29",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(e )",
+       "note": "Although this is a permit-to-purchase law, permits to acquire pistols and revolvers are only valid for 10 days and require a separate application for each transaction, so the law operates as a true waiting period.  The waiting period requirement does not apply to buyers who have received a permit within the past year.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "14"
+      }
+     ]
+    },
+    "age": {
+     "status": "21",
+     "detail": "Handguns: 21 · Rifles/shotguns: 21",
+     "evidence": [
+      {
+       "lawId": "HI1019",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1994-07-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(d)",
+       "note": "Permit law.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "HI1038",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1994-07-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. § 134-2(d)",
+       "note": "Permit law.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "HI1070",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2020-01-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. §§ 134-61, 134-65(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "HI1071",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2020-01-01",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. §§ 134-61, 134-64",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "HI1008",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1992-06-29",
+       "notYetInEffect": false,
+       "citation": "Haw. Rev. Stat. Ann. §§ 134-10.5, 707-714.5",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "IA": {
+   "name": "Iowa",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IA1061",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2021-07-01",
+       "notYetInEffect": false,
+       "citation": "Iowa Code § 724.5",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "IA1012",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1979-01-01",
+       "notYetInEffect": false,
+       "citation": "Iowa Code § 724.22(1), (2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IA1063",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2025-07-01",
+       "notYetInEffect": false,
+       "citation": "Iowa Code § 724.22(1), (2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IA1009",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1990-04-05",
+       "notYetInEffect": false,
+       "citation": "Iowa Code § 724.22(7)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "ID": {
+   "name": "Idaho",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "ID1007",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2016-07-01",
+       "notYetInEffect": false,
+       "citation": "Idaho Code Ann. § 18-3302",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "ID1015",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1994-04-07",
+       "notYetInEffect": false,
+       "citation": "Idaho Code Ann. § 18-3302A",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "ID1028",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1994-04-07",
+       "notYetInEffect": false,
+       "citation": "Idaho Code Ann. § 18-3308; § 18-3302A",
+       "note": "Parental consent exception",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "IL": {
+   "name": "Illinois",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IL1083",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1968-07-01",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/2",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IL1084",
+       "category": "permit to purchase: required",
+       "guns": "long gun",
+       "effective": "1968-07-01",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/2",
+       "note": "Permit is for 10 years.",
+       "discrepancy": "Vernick and Hepburn (2003) say this is a handgun law, but we think the law has always referred to firearms in general.",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IL1002",
+       "category": "background checks: permit to purchase",
+       "guns": "long gun",
+       "effective": "2013-08-19",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/3(a-10)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IL1031",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "2013-08-19",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/3(a-10)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IL1055",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2013-08-19",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/3(a-10)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IL1071",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2013-08-19",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/3(a-10)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IL1006",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2013-07-09",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 66/10(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "Handguns: 3 days · Rifles/shotguns: 1 day",
+     "evidence": [
+      {
+       "lawId": "IL1019",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "1967-08-03",
+       "notYetInEffect": false,
+       "citation": "Laws 1967, § 24-3",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "3"
+      },
+      {
+       "lawId": "IL1021",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "1968-07-01",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/2",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "IL1032",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "long gun",
+       "effective": "1968-07-01",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/2",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for long guns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "Vernick and Hepburn (2003) say this is a handgun law, but we think the law has always referred to firearms in general.",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "IL1020",
+       "category": "waiting period: general",
+       "guns": "long gun",
+       "effective": "1969-07-01",
+       "notYetInEffect": false,
+       "citation": "720 Ill. Comp. State. 5/24-3(A)(g)",
+       "note": "Waiting period remains the same for handguns, shortens for long guns. See Laws 1969, PA 76-1852 for original bill.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "1"
+      }
+     ]
+    },
+    "age": {
+     "status": "21",
+     "detail": "Handguns: 21 · Rifles/shotguns: 21",
+     "evidence": [
+      {
+       "lawId": "IL1028",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1968-07-01",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/4(a)",
+       "note": "Minimum age is 21, but allowed under 21 with parental consent.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IL1029",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1968-07-01",
+       "notYetInEffect": false,
+       "citation": "430 Ill. Comp. Stat. 65/4(a)",
+       "note": "Minimum age is 21, but allowed under 21 with parental consent.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IL1047",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2019-01-01",
+       "notYetInEffect": false,
+       "citation": "430 ILCS 67/1, et seq",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "IL1048",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2019-01-01",
+       "notYetInEffect": false,
+       "citation": "430 ILCS 67/5; 430 ILCS 67/35",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IL1009",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2000-01-01",
+       "notYetInEffect": false,
+       "citation": "720 Ill. Comp. Stat. 5/24-9(a)-(b)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "IN": {
+   "name": "Indiana",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IN1059",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2022-07-01",
+       "notYetInEffect": false,
+       "citation": "Ind. Code Ann. § 14-16-1-23 (b)",
+       "note": "The portion of the law previously requiring a permit for firearms appeared in this regulation concerning transport of firearms. The relevant passage requiring a permit was eliminated in 2021",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "IN1066",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1994-07-01",
+       "notYetInEffect": false,
+       "citation": "Ind. Code Ann. § 35-47-2-7(b)",
+       "note": "Law includes machine guns in addition to handguns",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "police",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IN1037",
+       "category": "prohibited possessor: erpo",
+       "guns": "handgun and long gun",
+       "effective": "2005-07-01",
+       "notYetInEffect": false,
+       "citation": "Ind. Code Ann. § 35-47-14-2",
+       "note": "Indiana, like Connecticut, call their laws \"Risk Based Firearm Removal Laws.\" The key difference is that risk based firearm removal laws are implemented when the subject of the removal order already owns a firearm. However, both laws also include prohibitions about possessing a firearm while the order is in effect, essentially creating a senario where the subject of the order could not leagally purchase a firearm. ERPO laws state that the order can be served even if the person does not already own a firearm.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "IN1010",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun and long gun",
+       "effective": "1994-03-15",
+       "notYetInEffect": false,
+       "citation": "Ind. Code Ann. §§ 35-47-10-6, 35-47-10-7",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "KS": {
+   "name": "Kansas",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "KS1005",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2015-07-01",
+       "notYetInEffect": false,
+       "citation": "Kan. Stat. Ann. § 21-6302",
+       "note": "License system still in effect for reciprocity, Sec. 75-7c03(a) now reads \"The availability of licenses to carry concealed handguns under this act shall not be construed to impose a general prohibition on the carrying of handguns without such license, whether carried openly or concealed, or loaded or unloaded.\"",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "KS1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1970-07-01",
+       "notYetInEffect": false,
+       "citation": "Kan. Stat. Ann. § 21-6301(a)(7)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "KY": {
+   "name": "Kentucky",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "KY1030",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2019-06-26",
+       "notYetInEffect": false,
+       "citation": "Ky. Rev. Stat. Ann. § 237",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "KY1012",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1994-07-15",
+       "notYetInEffect": false,
+       "citation": "Ky. Rev. Stat. Ann. § 527.110(1)(a)",
+       "note": "",
+       "discrepancy": "Not included in the Giffords Law Center to Prevent Gun Violence (undated) website.",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "KY1008",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun",
+       "effective": "1994-07-15",
+       "notYetInEffect": false,
+       "citation": "Ky. Rev. Stat. Ann. § 527.110",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "LA": {
+   "name": "Louisiana",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "LA1063",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2024-08-01",
+       "notYetInEffect": false,
+       "citation": "La. Rev. Stat. 14 § 95 (A)(1), (M)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "LA1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1972-07-12",
+       "notYetInEffect": false,
+       "citation": "La. Rev. Stat. § 14:91",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "LA1025",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1972-07-12",
+       "notYetInEffect": false,
+       "citation": "La. Rev. Stat. § 14:91",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "MA": {
+   "name": "Massachusetts",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MA1078",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1957-01-01",
+       "notYetInEffect": false,
+       "citation": "Mass. Gen. Laws Ann. Ch. 140, § 131A (1957)",
+       "note": "Changes language from \"pistol or revolver\" to \"firearm.\" Language now says \"firearm, rifle or shotgun.\"",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MA1081",
+       "category": "permit to purchase: required",
+       "guns": "long gun",
+       "effective": "1957-01-01",
+       "notYetInEffect": false,
+       "citation": "Mass. Gen. Laws Ann. Ch. 140, § 131A (1957)",
+       "note": "Changes language from \"pistol or revolver\" to \"firearm.\" Language now says \"firearm, rifle or shotgun.\"",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MA1055",
+       "category": "background checks: permit to purchase",
+       "guns": "long gun",
+       "effective": "1969-01-01",
+       "notYetInEffect": false,
+       "citation": "Mass Laws 1968, Ch. 737 § 129B",
+       "note": "Permit to purchase law. Vernick and Hepburn (2003) say handguns only, but law includes rifles. See also Mass. Gen. Laws Ch. 140, § 128A  law requiring private sellers to use web portal to conduct real-time check.",
+       "discrepancy": "Cramer (undated) notes that the \"1968 law that requires a Firearms ID card or License to Carry to purchase a firearm apparently did not explicitly require private party sales to have a background check. (This was added in¬†1998.) Still, it is quite apparent that you needed an FID or LTC to purchase a firearm in Massachusetts starting in 1968, and both required a background check. I think it is clear that Massachusetts has required a background check to get either FID or LTC, and you could not legally buy a firearm from anyone without one or the other.\" See http://claytonecramer.blogspot.com/2013/03/need-some-help-chasing-down-some-laws_22.html",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MA1067",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun and long gun",
+       "effective": "2022-08-10",
+       "notYetInEffect": false,
+       "citation": "M.G.L.A. 140 § 131 (a-c)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MA1068",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-06-23",
+       "notYetInEffect": false,
+       "citation": "NEW YORK STATE RIFLE & PISTOL ASSN., INC. v. BRUEN",
+       "note": "The Supreme court decision in Bruen determined that their restrictive permitting laws involving law enforcement discretion in the provision of permits was unconstitutional, so from June 23, 2022, Massachusetts has been making changes to their law that will bring it into compliance with the Bruen decision.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "MA1020",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1969-01-01",
+       "notYetInEffect": false,
+       "citation": "Mass Gen. Laws Ch. 140 § 130 (1968); Mass Gen. Laws Ch. 140 § 129B",
+       "note": "Exceptions for minors with firearm ID cards, a sporting or hunting license, and written parental consent; Firearm ID cards do not entitle holder to purchase, transfer, possess, or carry large capacity or semi-automatic firearms.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MA1017",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1998-10-21",
+       "notYetInEffect": false,
+       "citation": "Mass Gen. Laws Ch. 140 § 130",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MA1042",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2018-07-03",
+       "notYetInEffect": false,
+       "citation": "Mass. Gen. Laws ch. 140, § 121; Mass. Gen. Laws ch. 140, § 129B(C); Mass. Gen. Laws ch. 140, § 131(C); Mass. Gen. Laws ch. 140, §131R-Z;",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MA1043",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2018-07-03",
+       "notYetInEffect": false,
+       "citation": "Ch. 140, §§ 121, 131R, 131S, 131T",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "always",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MA1008",
+       "category": "child access laws: safe storage",
+       "guns": "handgun and long gun",
+       "effective": "1998-10-21",
+       "notYetInEffect": false,
+       "citation": "Mass. Gen. Laws ch.140, § 131L",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "MD": {
+   "name": "Maryland",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MD1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun and long gun",
+       "effective": "1996-10-01",
+       "notYetInEffect": false,
+       "citation": "Md. Code Ann., Pub. Safety § 5-124, § 5-204.1",
+       "note": "Formerly MD CODE Art. 27, § 442",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MD1030",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "2013-10-01",
+       "notYetInEffect": false,
+       "citation": "MD Code, Public Safety, § 5-117.1",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MD1074",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "2013-10-01",
+       "notYetInEffect": false,
+       "citation": "Md. Public Safety Code Ann. § 5-117.1",
+       "note": "Ruled unconstitutional by Maryland Shall Issue, Inc. v. Moore (86 F.4th 1038).  Law is still in effect while awaiting rehearing by full 4th Circ. Court of Appeals.  / Current law has three types of licenses for gun purchasers and owners: the Firearm Identification Card (‚”FID”), the license to carry, and a permit to purchase, rent or lease. Mass. Gen. Laws ch. 140, §§ 129B, 131",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MD1065",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-06-23",
+       "notYetInEffect": false,
+       "citation": "NEW YORK STATE RIFLE & PISTOL ASSN., INC. v. BRUEN",
+       "note": "The Supreme court decision in Bruen determined that their restrictive permitting laws involving law enforcement discretion in the provision of permits was unconstitutional, so from June 23, 2022, Massachusetts has been making changes to their law that will bring it into compliance with the Bruen decision.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "Handguns: 7 days",
+     "evidence": [
+      {
+       "lawId": "MD1026",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "1966-06-01",
+       "notYetInEffect": false,
+       "citation": "Md. Public Safety Code Ann. § 5-124(a)",
+       "note": "See Md. Ann. Code art. 27, § 442 (1991) for initial law.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "7"
+      },
+      {
+       "lawId": "MD1028",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "2013-10-01",
+       "notYetInEffect": false,
+       "citation": "Md. Public Safety Code Ann. § 5-117.1",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "MD1018",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1888-01-01",
+       "notYetInEffect": false,
+       "citation": "Md. Ann. Code art. 27 § 5-134(b)",
+       "note": "The initial version of the law passed in 1888. The current version excerpted here passed in 2003. The prior version was found in Md. Ann. Code Art. 27, § 442, 445, and before that, in Md. Ann. Code Art. 27, Sec. 491 (1951).",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MD1019",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1970-01-01",
+       "notYetInEffect": false,
+       "citation": "Md. Ann. Code art. 27, § 406; Md. Code Ann., Pub. Safety § 5-134(d)(1)(ii) (2016)",
+       "note": "",
+       "discrepancy": "Vernick and Hepburn (2003) stated that 21 is the minimum age for all firearms. This section, which refers to all firearms, must have only applied to long guns, because the section on regulated firearms (assault weapons and handguns) has a different minimum age. Unclear what year this law was first implemented.",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MD1037",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2018-10-01",
+       "notYetInEffect": false,
+       "citation": "Md. Code Ann., Pub. Safety §§ 5-601(E)(2); 5-602; 5-603",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MD1038",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2018-10-01",
+       "notYetInEffect": false,
+       "citation": "Md. Code Ann., Pub. Safety §§ 5-601(E)(2); 5-602; 5-603",
+       "note": "Maryland uses the same abbreviation for an ERPO but the name is slightly different as the state uses \"protective\" instead of \"protection\" order (Extreme Risk Protective Order). This law identifys a broad range of individuals who can file for an extreme risk protection order: (I) a physician, psychologist, clinical social worker, licensed clinical professional counselor, clinical nurse specialist in psychiatric and mental health nursing, psychiatric nurse practitioner, licensed clinical marriage or family therapist, or health officer or designee of a health officer who has examined the individual; (ii) a law enforcement officer; (iii) the spouse of the respondent; (iv) a cohabitant of the respondent; (v) a person related to the respondent by blood, marriage, or adoption; (vi) an individual who has a child in common with the respondent; (vii) a current dating or intimate partner of the respondent; or (viii) a current or former legal guardian of the respondent.\n\nNote that Maryland has three types of orders. In addition to the ex parte and full orders, the State also specifies an interim order that can be requested from judicial commissioners when the court is closed.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MD1008",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1992-10-01",
+       "notYetInEffect": false,
+       "citation": "Md. Ann. Code art. 27, § 36K(b),(e )",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "ME": {
+   "name": "Maine",
+   "laws": {
+    "bgcheck": {
+     "status": "limited",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "ME1059",
+       "category": "background checks: private sales : point of sale (limited)",
+       "guns": "handgun and long gun",
+       "effective": "2024-08-09",
+       "notYetInEffect": false,
+       "citation": "Maine Revised Statutes Annotated 15 § 395 (2), (4)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "ME1005",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2015-10-15",
+       "notYetInEffect": false,
+       "citation": "25 Maine Rev. Stat. Ann. § 2001(A)(2)(A-1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "3 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "ME1058",
+       "category": "waiting period: general",
+       "guns": "handgun and long gun",
+       "effective": "2024-08-09",
+       "notYetInEffect": false,
+       "citation": "ME ST T. 25 § 2016",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "3"
+      }
+     ]
+    },
+    "age": {
+     "status": "under18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 16",
+     "evidence": [
+      {
+       "lawId": "ME1011",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1976-05-01",
+       "notYetInEffect": false,
+       "citation": "Me. Stat., 17-A § 554-A",
+       "note": "Restricted to 18 for sale from non-guardians",
+       "discrepancy": "",
+       "age": "16",
+       "waitDays": ""
+      },
+      {
+       "lawId": "ME1010",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2003-08-14",
+       "notYetInEffect": false,
+       "citation": "Me. Stat., 17-A § 554-B (2)",
+       "note": "§ 554-B. Unlawful transfer of handgun to minor\n\n\n\n1. As used in this section, the following terms have the following meanings.\n\n\n\nA. \"Handgun\" means a firearm that has a short stock and is designed to be held and fired by the use of a single\n\n\n\nhand, or any combination of parts from which a handgun can be assembled.\n\n\n\nB. \"Minor\" means a person under 18 years of age.\n\n\n\nC. \"Transfer\" means to sell, furnish, give, lend, deliver or otherwise provide, with or without consideration.; exceptions listed in § 554-B (3) include parental consent, target practice, hunting, etc.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "ME1056",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2021-07-01",
+       "notYetInEffect": false,
+       "citation": "Me. Stat., 17-A § 554(1)(B-4)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "MI": {
+   "name": "Michigan",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MI1056",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "1991-03-28",
+       "notYetInEffect": false,
+       "citation": "Mich. Comp. Laws Serv. § 28.422 Sec. 2. (1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MI1073",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2024-02-13",
+       "notYetInEffect": false,
+       "citation": "Mich. Comp. Laws Serv. § 28.422a Sec. 2a. (1)(d)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MI1070",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "2024-02-13",
+       "notYetInEffect": false,
+       "citation": "Mich. Comp. Laws Serv. § 28.422 Sec. 2. (1)(b) and Mich. Comp. Laws Serv. § 28.422a Sec. 2a. (1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MI1072",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2024-02-13",
+       "notYetInEffect": false,
+       "citation": "Mich Comp. Laws Serv. Sec. 28.422 Sec. 2",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "defacto",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MI1023",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "1927-09-05",
+       "notYetInEffect": false,
+       "citation": "Mich. Comp. Laws § 28.422",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "MI1020",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1931-01-01",
+       "notYetInEffect": false,
+       "citation": "Mich. Comp. Laws § 750.223(2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MI1017",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1991-03-28",
+       "notYetInEffect": false,
+       "citation": "Mich. Comp. Laws § 28.422(2)(1)",
+       "note": "Permit law.  Minimum age is 18 for private sales and 21 for dealers.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MI1074",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2024-04-11",
+       "notYetInEffect": false,
+       "citation": "MCR 3.718 (A)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MI1057",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2024-03-31",
+       "notYetInEffect": false,
+       "citation": "Mich. Comp. Laws Serv. § 28.429",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "MN": {
+   "name": "Minnesota",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MN1048",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun and long gun",
+       "effective": "2023-08-01",
+       "notYetInEffect": false,
+       "citation": "Minn. Stat. Ann. §624.7132, subd. 4",
+       "note": "Law is limited to \"pistols and semi-automatic military style assault weapons\"",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "30"
+      },
+      {
+       "lawId": "MN1049",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun and long gun",
+       "effective": "2023-08-01",
+       "notYetInEffect": false,
+       "citation": "Minn. Stat. § 624.7134, subds. 2",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MN1005",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2003-08-01",
+       "notYetInEffect": false,
+       "citation": "Minn. Stat. § 624.714",
+       "note": "Vernick and Hepburn (2003) called this \"may issue,\" but it was shall issue. Also there were several constitutional challenges to the law; see Legal Community Against Violence (2008).",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "MN1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1977-08-01",
+       "notYetInEffect": false,
+       "citation": "Minn. Stat. § 624.7132, subd. 15(b)(1)",
+       "note": "Permit law. See Minn. Stat. § 624.7132, sub. 3 (1977) for original language.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MN1017",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1986-08-01",
+       "notYetInEffect": false,
+       "citation": "Minn. Stat. § 609.66",
+       "note": "Minimum age is 14 outside of cities and with guardian's consent",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MN1061",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2024-01-01",
+       "notYetInEffect": false,
+       "citation": "MN ST § 624.7171",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MN1008",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1993-08-01",
+       "notYetInEffect": false,
+       "citation": "Minn. Stat. § 609.666, Subd. 2, 3",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "MO": {
+   "name": "Missouri",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MO1009",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2017-01-01",
+       "notYetInEffect": false,
+       "citation": "Mo. Rev. Stat. § 571.030",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "MO1020",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1981-09-28",
+       "notYetInEffect": false,
+       "citation": "Mo. Rev. Stat. § 571.060.1(2)",
+       "note": "About sale of handguns only. § 562.016.4. A person \"acts recklessly\" or is reckless when he consciously disregards a substantial and unjustifiable risk that circumstances exist or that a result will follow, and such disregard constitutes a gross deviation from the standard of care which a reasonable person would exercise in the situation.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MO1013",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun and long gun",
+       "effective": "1981-09-28",
+       "notYetInEffect": false,
+       "citation": "Mo. Rev. Stat. § 571.060.1(2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "MS": {
+   "name": "Mississippi",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MS1005",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2016-04-15",
+       "notYetInEffect": false,
+       "citation": "Miss. Code Ann. § 45-9-101(24)",
+       "note": "The purse exception was added in 2015; the holster exception in 2016. This is effectively constitutional carry, if carried in the specified ways (e.g., wouldn't allow permitless carry in ankle holster) and not in prohibited locations (see Miss. Code Ann. § 45-9-101(13)).",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "MS1013",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1942-01-01",
+       "notYetInEffect": false,
+       "citation": "Miss. Code Ann. § 97-37-13",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "MS1023",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1942-01-01",
+       "notYetInEffect": false,
+       "citation": "Miss. Code Ann. § 97-37-13",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MS1009",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun",
+       "effective": "1994-07-01",
+       "notYetInEffect": false,
+       "citation": "Miss. Code Ann. § 97-37-15",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "MT": {
+   "name": "Montana",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "MT1053",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2021-02-18",
+       "notYetInEffect": false,
+       "citation": "Mont. Code Ann. § 45-8-316",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "NC": {
+   "name": "North Carolina",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NC1006",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "1995-07-10",
+       "notYetInEffect": false,
+       "citation": "N.C. Gen. Stat. § 14-415.10 et seq",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "NC1016",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1893-04-06",
+       "notYetInEffect": false,
+       "citation": "N.C. Gen. Stat. § 14-315(a1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NC1010",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1993-12-01",
+       "notYetInEffect": false,
+       "citation": "N.C. Gen. Stat. § 14-315.1 (1993)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "ND": {
+   "name": "North Dakota",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "ND1027",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2017-08-01",
+       "notYetInEffect": false,
+       "citation": "N.D. Cent. Code § 62.1-04-01; 62.1-04-02",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "ND1010",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1985-04-15",
+       "notYetInEffect": false,
+       "citation": "N.D. Cent. Code § 62.1-03-02",
+       "note": "N.D. Cent. Code §14-10-01 defines minor as under 18.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "NE": {
+   "name": "Nebraska",
+   "laws": {
+    "bgcheck": {
+     "status": "handgun",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NE1001",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "1991-09-05",
+       "notYetInEffect": false,
+       "citation": "Neb. Rev. Stat. § 69-2404",
+       "note": "Exception for holders of CCW permits.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NE1044",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "1991-09-05",
+       "notYetInEffect": false,
+       "citation": "Neb. Rev. Stat. § 69-2404",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NE1020",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1991-09-05",
+       "notYetInEffect": false,
+       "citation": "Neb. Rev. Stat. Ann. §§ 69-2403, 69-2404, 2407",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NE1056",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2023-09-02",
+       "notYetInEffect": false,
+       "citation": "Neb.Rev.St. § 28-1202.01 (1)",
+       "note": "Formerly cited as NE ST § 69-2441",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "defacto",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NE1054",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "1991-09-05",
+       "notYetInEffect": false,
+       "citation": "Neb. Rev. Stat. Ann. §§ 69-2403, 69-2404, 2407",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "NE1013",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1994-04-15",
+       "notYetInEffect": false,
+       "citation": "Neb. Rev. Stat. § 28-1204.01",
+       "note": "Neb. Rev. Stat. § 28-1201 defines juvenile as 18 or under.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NE1025",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1994-04-15",
+       "notYetInEffect": false,
+       "citation": "Neb. Rev. Stat. § 28-1204.01",
+       "note": "Neb. Rev. Stat. § 28-1201 defines juvenile as 18 or under.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "NH": {
+   "name": "New Hampshire",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NH1029",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2017-02-22",
+       "notYetInEffect": false,
+       "citation": "N.H. Rev. Stat. Ann. § 159:6",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "NH1013",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1973-06-03",
+       "notYetInEffect": false,
+       "citation": "N.H. Rev. Stat. Ann. § 159:12",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NH1008",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2001-01-01",
+       "notYetInEffect": false,
+       "citation": "N.H. Rev. Stat. Ann. § 650-C:1(III)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "NJ": {
+   "name": "New Jersey",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NJ1033",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "1927-03-30",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3a, 3e",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1042",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "1927-03-30",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3a, 3e",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1084",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1927-03-30",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3a, 3e",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1002",
+       "category": "background checks: permit to purchase",
+       "guns": "long gun",
+       "effective": "1970-01-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3b, 3e",
+       "note": "Firearm Purchaser ID Card requires a background check. ID card allows unlimited sales of long guns. Couldn't verify dates.  Unclear what year this law was first implemented.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1028",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "1970-01-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3b, 3e",
+       "note": "Firearm Purchaser ID Card requires a background check. ID card allows unlimited sales of long guns. Couldn't verify dates.  Unclear what year this law was first implemented.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1083",
+       "category": "permit to purchase: required",
+       "guns": "long gun",
+       "effective": "1970-01-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3",
+       "note": "Permit to purchase handgun is for 90 days; for long guns, it is indefinite (as long as the person still qualifies).\n\nUnclear what year this law was first implemented.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NJ1072",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-06-23",
+       "notYetInEffect": false,
+       "citation": "NEW YORK STATE RIFLE & PISTOL ASSN., INC. v. BRUEN",
+       "note": "The Supreme court decision in Bruen determined that their restrictive permitting laws involving law enforcement discretion in the provision of permits was unconstitutional, so from June 23, 2022, Massachusetts has been making changes to their law that will bring it into compliance with the Bruen decision.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1085",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-12-22",
+       "notYetInEffect": false,
+       "citation": "New Jersey Statutes Annotated 2C:58-4 (a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "Handguns: 7 days",
+     "evidence": [
+      {
+       "lawId": "NJ1071",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "1927-03-30",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3a, 3e",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "NJ1032",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "long gun",
+       "effective": "1970-01-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-3",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for long guns, and arbitrarily set the length of the waiting period to 10 days.\n\nUnclear what year this law was first implemented.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      },
+      {
+       "lawId": "NJ1031",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "1979-09-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-2.a(5)(a)",
+       "note": "Permit law but permit required for every handgun purchase so creates waiting period.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "7"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "NJ1017",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1969-01-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:39-10e",
+       "note": "Criminalizes sale of firearms to minors. See N.J. Stat. Ann. § 2C:58-6.1 for law dealing with purchase.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1016",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2001-01-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-6.1(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NJ1041",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2019-09-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. §§ 2C:58-21, 23",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NJ1043",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2019-09-01",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. §§ 2C:58-21",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NJ1009",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1992-01-17",
+       "notYetInEffect": false,
+       "citation": "N.J. Stat. Ann. § 2C:58-15",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "NM": {
+   "name": "New Mexico",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NM1037",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2019-07-01",
+       "notYetInEffect": false,
+       "citation": "N. M. S. A. 1978, § 30-7-7.1",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NM1038",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2019-07-01",
+       "notYetInEffect": false,
+       "citation": "N. M. S. A. 1978, § 30-7-7.1",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NM1004",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2004-01-01",
+       "notYetInEffect": false,
+       "citation": "N.M. Stat. Ann. § 29-19-4",
+       "note": "According to documentation relied upon by Aneja, Donohue, and Zhang (2013), \"Concealed carry banned until 2001 law, which was supposed to give out permits January 1st, 2002 (Law 2001, volume 2, page 1889). This bill never went into effect and was later struck down by the state Supreme Court. The bill allowed counties to opt-out of allowing concealed-carry weapons in their province, which is why it isn't counted as RTC earlier. A later court challenge was overturned shortly after the law was scheduled to take effect, but newspapers describing the decision noted that applications were pending for this time period and noted that the law took effect January 1st.\"\n\nThe law states  it is effective starting July 1, 2003.  However, this is the date that applications were required to be available. Permits couldn’t be issued until January 1, 2004, so we treat this as the implementation date.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "7 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "NM1062",
+       "category": "waiting period: general",
+       "guns": "handgun and long gun",
+       "effective": "2024-05-15",
+       "notYetInEffect": false,
+       "citation": "NM ST § 30-7-7.3",
+       "note": "Prohibition excludes buyers who hold valid federal firearms license, valid New Mexico concealed handgun license, law enforcement agencies, two law enforcement officers, and between immediate family members",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "7"
+      }
+     ]
+    },
+    "age": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "erpo": {
+     "status": "police",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NM1049",
+       "category": "prohibited possessor: erpo",
+       "guns": "handgun and long gun",
+       "effective": "2020-07-20",
+       "notYetInEffect": false,
+       "citation": "NM ST § 40-17-5",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NM1050",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2020-07-20",
+       "notYetInEffect": false,
+       "citation": "NM ST § 40-17-5 (d)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NM1052",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2023-06-16",
+       "notYetInEffect": false,
+       "citation": "N.M. Stat. Ann. § 30-7-7.2",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "NV": {
+   "name": "Nevada",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NV1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2020-01-02",
+       "notYetInEffect": false,
+       "citation": "Nev. Rev. Stat. Ann. § 202. Sec 5.",
+       "note": "According to Giffords, \" 2016, Nevada voters approved a ballot initiative to require background checks on private sales of firearms. However, after the FBI announced that it would not conduct background checks in the manner the initiative required it to, the Nevada Attorney General issued an opinion stating that it would not enforce the initiative. The Nevada legislature mooted this conflict by passing 2019 NV SB 143.\"  See also: https://thenevadaindependent.com/article/the-indy-explains-the-seven-year-battle-to-implement-background-checks-on-private-gun-sales",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NV1019",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2020-01-02",
+       "notYetInEffect": false,
+       "citation": "Nev. Rev. Stat. Ann. § 202.254",
+       "note": "According to Giffords, \" 2016, Nevada voters approved a ballot initiative to require background checks on private sales of firearms. However, after the FBI announced that it would not conduct background checks in the manner the initiative required it to, the Nevada Attorney General issued an opinion stating that it would not enforce the initiative. The Nevada legislature mooted this conflict by passing 2019 NV SB 143.\" See also: https://thenevadaindependent.com/article/the-indy-explains-the-seven-year-battle-to-implement-background-checks-on-private-gun-sales",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NV1005",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "1995-07-07",
+       "notYetInEffect": false,
+       "citation": "Nev. Rev. Stat. Ann. § 202.366",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "NV1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1955-03-22",
+       "notYetInEffect": false,
+       "citation": "Nev. Rev. Stat. Ann. § 202.310",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NV1067",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2020-01-01",
+       "notYetInEffect": false,
+       "citation": "Nev. Rev. Stat. Ann. § 33.560",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NV1068",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2020-01-01",
+       "notYetInEffect": false,
+       "citation": "Nev. Rev. Stat. Ann. § 33.580",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NV1009",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1991-10-01",
+       "notYetInEffect": false,
+       "citation": "Nev. Rev. Stat. Ann. § 202.300",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "NY": {
+   "name": "New York",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NY1001",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "1934-07-01",
+       "notYetInEffect": false,
+       "citation": "N.Y. Penal Law § 400.00 (4)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NY1023",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "2013-01-01",
+       "notYetInEffect": false,
+       "citation": "N.Y. Penal Law § 400.00(1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NY1002",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2013-03-16",
+       "notYetInEffect": false,
+       "citation": "N.Y. Gen. Bus. Law Art. 39-DDD § 898",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NY1004",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2013-03-16",
+       "notYetInEffect": false,
+       "citation": "N.Y. Gen. Bus. Law Art. 39-DDD § 898",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NY1069",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2022-06-23",
+       "notYetInEffect": false,
+       "citation": "NEW YORK STATE RIFLE & PISTOL ASSN., INC. v. BRUEN",
+       "note": "The Supreme court decision in Bruen determined that their restrictive permitting laws involving law enforcement discretion in the provision of permits was unconstitutional, so from June 23, 2022, Massachusetts has been making changes to their law that will bring it into compliance with the Bruen decision.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "defacto",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NY1022",
+       "category": "waiting period: Waiting Periods: De facto (permit required)",
+       "guns": "handgun",
+       "effective": "2013-01-01",
+       "notYetInEffect": false,
+       "citation": "N.Y. Penal Law § 400.00(2),(10)",
+       "note": "de facto (permit required)”: The law does not require that permits are issued with a delay, but in practice they may take weeks to obtain, so we treat this as a de facto waiting period for handguns, and arbitrarily set the length of the waiting period to 10 days.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "21",
+     "detail": "Handguns: 21 · Rifles/shotguns: 21",
+     "evidence": [
+      {
+       "lawId": "NY1017",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2000-11-01",
+       "notYetInEffect": false,
+       "citation": "N.Y. Penal Law § 400 (1)(a),(2)",
+       "note": "Law regarding permits to carry and possess, but permits are required for sale.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NY1082",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2000-11-01",
+       "notYetInEffect": false,
+       "citation": "N.Y. Penal Law § 400 (1)(a),(2)",
+       "note": "Law regarding permits to carry and possess, but permits are required for sale.",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NY1036",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2019-08-24",
+       "notYetInEffect": false,
+       "citation": "McKinney's CPLR § § 6340- 6342",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NY1037",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2019-08-24",
+       "notYetInEffect": false,
+       "citation": "McKinney's CPLR § § 6340- 6342",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "always",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "NY1027",
+       "category": "child access laws: safe storage",
+       "guns": "handgun and long gun",
+       "effective": "2019-09-28",
+       "notYetInEffect": false,
+       "citation": "NY PENAL § 265.45",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "NY1070",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2019-09-28",
+       "notYetInEffect": false,
+       "citation": "N.Y. Penal Law §§ 265.45",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "OH": {
+   "name": "Ohio",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "OH1051",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2022-06-13",
+       "notYetInEffect": false,
+       "citation": "Ohio Rev. Code Ann. § 2923.111",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "OH1012",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1974-01-01",
+       "notYetInEffect": false,
+       "citation": "Ohio Rev. Code Ann. § 2923.21; § 2923.211",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "OH1024",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1974-01-01",
+       "notYetInEffect": false,
+       "citation": "Ohio Rev. Code Ann. § 2923.21; § 2923.211",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "OK": {
+   "name": "Oklahoma",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "OK1031",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2019-11-01",
+       "notYetInEffect": false,
+       "citation": "Okla. Stat. Ann. tit. 21, § 1272",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "OK1013",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1910-01-01",
+       "notYetInEffect": false,
+       "citation": "Okla. Stat. Ann. tit. 21, § 1273(A)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "OK1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1993-06-07",
+       "notYetInEffect": false,
+       "citation": "Okla. Stat. Ann. tit. 21, § 1273(A)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "OK1009",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun and long gun",
+       "effective": "1994-07-01",
+       "notYetInEffect": false,
+       "citation": "Okla. Stat. tit. 21, § 1273(B)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "OR": {
+   "name": "Oregon",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "OR1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2015-05-11",
+       "notYetInEffect": false,
+       "citation": "O.R.S. § 166.435",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "OR1021",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2015-05-11",
+       "notYetInEffect": false,
+       "citation": "O.R.S. § 166.435",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "OR1007",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "1990-01-01",
+       "notYetInEffect": false,
+       "citation": "Or. Rev. Stat. § 166.291(1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "OR1012",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1970-01-01",
+       "notYetInEffect": false,
+       "citation": "Or. Rev. Stat. § 166.470(1)(a)",
+       "note": "Unclear what year this law was first implemented.",
+       "discrepancy": "Vernick and Hepburn (2003) say handguns, about all firearms. BD: subsection (3) lists exceptions: (3) Subsection (1)(a) of this section does not prohibit:\n\n\n\n\n\n\n\n   (a) The parent or guardian, or another person with the consent of the parent or guardian, of a minor from transferring to the minor a firearm, other than a handgun; or\n\n\n\n\n\n\n\n   (b) The temporary transfer of any firearm to a minor for hunting, target practice or any other lawful purpose.",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "OR1026",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1970-01-01",
+       "notYetInEffect": false,
+       "citation": "Or. Rev. Stat. § 166.470(1)(a)",
+       "note": "Unclear what year this law was first implemented.",
+       "discrepancy": "Vernick and Hepburn (2003) say handguns, about all firearms. BD: subsection (3) lists exceptions: (3) Subsection (1)(a) of this section does not prohibit:\n\n\n\n\n\n\n\n   (a) The parent or guardian, or another person with the consent of the parent or guardian, of a minor from transferring to the minor a firearm, other than a handgun; or\n\n\n\n\n\n\n\n   (b) The temporary transfer of any firearm to a minor for hunting, target practice or any other lawful purpose.",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "OR1031",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2018-01-01",
+       "notYetInEffect": false,
+       "citation": "Or. Rev. Stat. Ann. §§ 166.525, 166.527",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "OR1032",
+       "category": "prohibited possessor: erpo : expanded",
+       "guns": "handgun and long gun",
+       "effective": "2018-01-01",
+       "notYetInEffect": false,
+       "citation": "Or. Rev. Stat. Ann. §§ 166.525, 166.527",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "always",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "OR1055",
+       "category": "child access laws: safe storage",
+       "guns": "handgun and long gun",
+       "effective": "2021-09-25",
+       "notYetInEffect": false,
+       "citation": "OR Rev Stat § 166.395 (2021)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "PA": {
+   "name": "Pennsylvania",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "PA1025",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun and long gun",
+       "effective": "1995-10-11",
+       "notYetInEffect": false,
+       "citation": "18 Pa. Cons. Stat. Ann. § 6111",
+       "note": "Vernick and Hepburn (2003) say handguns, but the law has always referred to firearms in general. The Pennsylvania Instant Background check did not come online until 1998, which is why we use a later implementation date than the effective date as written in the law.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "PA1007",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "1989-06-21",
+       "notYetInEffect": false,
+       "citation": "18 Pa. Cons. Stat. Ann. § 6109(e)(1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "PA1018",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1973-06-06",
+       "notYetInEffect": false,
+       "citation": "18 Pa. Cons. Stat. Ann. § 6110.1(c); 18 Pa. Cons. Stat. Ann. § 6302(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "PA1032",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1973-06-06",
+       "notYetInEffect": false,
+       "citation": "18 Pa. Cons. Stat. Ann. § 6110.1(c); 18 Pa. Cons. Stat. Ann. § 6302(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "PA1010",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun and long gun",
+       "effective": "1995-10-11",
+       "notYetInEffect": false,
+       "citation": "18 Pa. Cons. Stat. Ann. § 6110.1(c)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "RI": {
+   "name": "Rhode Island",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "RI1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "1959-01-26",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws §§ 11-47-35, 11-47-35.1",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "RI1034",
+       "category": "background checks: permit to purchase",
+       "guns": "handgun",
+       "effective": "1959-01-26",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-35(a)(2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "RI1071",
+       "category": "permit to purchase: required",
+       "guns": "handgun",
+       "effective": "1959-01-26",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-35(a)(1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "RI1003",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "1990-07-01",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-35.2",
+       "note": "(July 17, 2007, P.L.139, No.41, eff. 60 days; Oct. 17, 2008, P.L.1628, No.131, eff. 60 days)",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "may",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "RI1007",
+       "category": "carrying a concealed weapon (ccw): may issue",
+       "guns": "handgun",
+       "effective": "1927-01-01",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-11",
+       "note": "On June 23, 2022, the Supreme Court ruled in New York State Rifle & Pistol Association v. Bruen that while Connecticut, Delaware, and Rhode Island have laws with discretionary criteria, because they “appear to operate like ‘shall issue’ jurisdictions” and are therefore not unconstitutional.  “Finally, Rhode Island has a suitability requirement, … but the Rhode Island Supreme Court has flatly denied that the ‘[d]emonstration of a proper showing of need’ is a component of that requirement.”  As such, this “law change” does not entail any real changes in rules or operations of the permitting system, but is recorded here to reflect that the Supreme Court concluded that any discretionary elements of the states law that might be considered a feature of a “may issue” state, are not unconstitutional.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "7 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "RI1023",
+       "category": "waiting period: general",
+       "guns": "handgun",
+       "effective": "1990-06-18",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-35",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "7"
+      },
+      {
+       "lawId": "RI1024",
+       "category": "waiting period: general",
+       "guns": "long gun",
+       "effective": "1990-07-01",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-35.2(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "7"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "RI1016",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1959-01-01",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-30(a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "RI1033",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1959-01-01",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-30(a); R.I. Gen. Laws § 11-47-35(a)(1); R.I. Gen. Laws § 11-47-37",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "police",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "RI1037",
+       "category": "prohibited possessor: erpo",
+       "guns": "handgun and long gun",
+       "effective": "2018-06-01",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 8-8.3-4",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "RI1038",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2018-06-01",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 8-8.3-4",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "RI1011",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1995-06-19",
+       "notYetInEffect": false,
+       "citation": "R.I. Gen. Laws § 11-47-60.1",
+       "note": "In 2024, this law was amended to create first and second degree violations, raise the age (to under 18), and increase penalties.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "SC": {
+   "name": "South Carolina",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "SC1050",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2024-03-07",
+       "notYetInEffect": false,
+       "citation": "S.C. Code Ann. §§ 23-31-215 (O)(2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "SC1032",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1998-03-27",
+       "notYetInEffect": false,
+       "citation": "Code 1976 § 16-23-30",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "SD": {
+   "name": "South Dakota",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "SD1027",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2019-07-01",
+       "notYetInEffect": false,
+       "citation": "S.D. Codified Laws § 23-7-7",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "TN": {
+   "name": "Tennessee",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "TN1055",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2021-07-01",
+       "notYetInEffect": false,
+       "citation": "Tenn. Code Ann. § 39-17-1307",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "TN1018",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1989-11-01",
+       "notYetInEffect": false,
+       "citation": "Tenn. Code Ann. § 39-17-1303",
+       "note": "Tenn. Code Ann. § 39-11-106(a)(23) defines minor as under 18.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "TN1028",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1989-11-01",
+       "notYetInEffect": false,
+       "citation": "Tenn. Code Ann. § 39-17-1303",
+       "note": "Tenn. Code Ann. § 39-11-106(a)(23) defines minor as under 18.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "TN1015",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun",
+       "effective": "1994-04-15",
+       "notYetInEffect": false,
+       "citation": "Tenn. Code Ann. § 39-17-1320",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "TX": {
+   "name": "Texas",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "TX1051",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2021-09-01",
+       "notYetInEffect": false,
+       "citation": "Texas Penal Code § 46.02",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "TX1011",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1974-01-01",
+       "notYetInEffect": false,
+       "citation": "Tex. Penal Code § 46.06(a)(2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "TX1022",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1974-01-01",
+       "notYetInEffect": false,
+       "citation": "Tex. Penal Code § 46.06(a)(2)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "TX1008",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1995-09-01",
+       "notYetInEffect": false,
+       "citation": "Texas Penal Code § 46.13",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "UT": {
+   "name": "Utah",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "UT1070",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2021-05-05",
+       "notYetInEffect": false,
+       "citation": "Utah Code Ann. § 76-10-523",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "UT1014",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1993-10-21",
+       "notYetInEffect": false,
+       "citation": "Utah Code Ann. §§ 76-10-509.5(1); 76-10-509.9(1)",
+       "note": "Not included in the Giffords Law Center to Prevent Gun Violence (undated) website. Vernick and Hepburn (2003) state that it applies to handguns only.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "UT1034",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1993-10-21",
+       "notYetInEffect": false,
+       "citation": "Utah Code Ann. §§ 76-10-509.5(1); 76-10-509.9(1)",
+       "note": "Not included in the Giffords Law Center to Prevent Gun Violence (undated) website. Vernick and Hepburn (2003) state that it applies to handguns only.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "intent",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "UT1010",
+       "category": "child access laws: intentional, reckless, or knowing provision",
+       "guns": "handgun and long gun",
+       "effective": "1993-10-21",
+       "notYetInEffect": false,
+       "citation": "Utah Code Ann. § 76-10-509.6",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "VA": {
+   "name": "Virginia",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VA1064",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun and long gun",
+       "effective": "2020-07-01",
+       "notYetInEffect": false,
+       "citation": "VA ST § 18.2-308.2:5",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VA1006",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "1995-07-01",
+       "notYetInEffect": false,
+       "citation": "Va. Code Ann. § 18.2-308 et seq",
+       "note": "There has been some disagreement about the appropriate implementation date. Aneja, Donohue, and Zhang (2014) describe the disagreement between the 1986 and 1988 laws. However, we use 1995 as the year of implementation, because earlier laws weren't treated as \"shall issue\" by judges. The 1995 law eliminated the \"need to carry\" requirement, resulting in many more permits.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "Handguns: 18",
+     "evidence": [
+      {
+       "lawId": "VA1015",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1960-07-01",
+       "notYetInEffect": false,
+       "citation": "Va. Code Ann. § 18.2-309(B)",
+       "note": "\"Minor\" defined in Va. Code Ann. § 1-207 as under 18.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "police",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VA1062",
+       "category": "prohibited possessor: erpo",
+       "guns": "handgun and long gun",
+       "effective": "2020-04-08",
+       "notYetInEffect": false,
+       "citation": "2020 VA H.B. 674 § 18.2-308.1:6",
+       "note": "Do we need chapter 9/2 which details an ERPO?",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "always",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VA1008",
+       "category": "child access laws: safe storage",
+       "guns": "handgun and long gun",
+       "effective": "1991-07-01",
+       "notYetInEffect": false,
+       "citation": "Va. Code Ann. § 18.2-56.2",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "VT": {
+   "name": "Vermont",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VT1022",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2018-04-11",
+       "notYetInEffect": false,
+       "citation": "13 V.S.A. § 4019(b)(1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "VT1029",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2018-04-11",
+       "notYetInEffect": false,
+       "citation": "13 V.S.A. § 4019(b)(1)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VT1003",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "1903-06-30",
+       "notYetInEffect": false,
+       "citation": "State v. Rosenthal 75 Vt. 295, 55 A. 610 (1903).",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "3 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "VT1062",
+       "category": "waiting period: general",
+       "guns": "handgun and long gun",
+       "effective": "2023-07-01",
+       "notYetInEffect": false,
+       "citation": "Vt. Stat. Ann. tit. 13, § 4019a",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "3"
+      }
+     ]
+    },
+    "age": {
+     "status": "under18",
+     "detail": "Handguns: 16 · Rifles/shotguns: 16",
+     "evidence": [
+      {
+       "lawId": "VT1027",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2018-04-11",
+       "notYetInEffect": false,
+       "citation": "13 V.S.A. § 4020(a)",
+       "note": "Does not apply if buyer has completed a hunter safety course, and there is no age ilmit on who may take these courses or receive these certificates, so we treat this law as not a true minimum age law, instead treating VT Title 13, Chap. 85, Sec 4007 as setting the minimum age of purchase.",
+       "discrepancy": "",
+       "age": "16",
+       "waitDays": ""
+      },
+      {
+       "lawId": "VT1028",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2018-04-11",
+       "notYetInEffect": false,
+       "citation": "13 V.S.A. § 4020(a)",
+       "note": "Does not apply if buyer has completed a hunter safety course, and there is no age ilmit on who may take these courses or receive these certificates, so we treat this law as not a true minimum age law, instead treating VT Title 13, Chap. 85, Sec 4007 as setting the minimum age of purchase.",
+       "discrepancy": "",
+       "age": "16",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VT1019",
+       "category": "prohibited possessor: erpo : ex parte",
+       "guns": "handgun and long gun",
+       "effective": "2018-04-11",
+       "notYetInEffect": false,
+       "citation": "Vt. Stat. Ann. tit. 13, §§ 4053, 4054",
+       "note": "In emergency cases, a State’s Attorney or the Attorney General may instead request that the court issue an ex parte temporary ERPO, prior to providing notice and holding a hearing. 6  In such cases, the court will issue an ex parte ERPO if it finds by a preponderance of the evidence that, at the time the ERPO is requested, the respondent poses an imminent and extreme risk of causing harm to self or others by purchasing, possessing, or receiving a firearm or by having a firearm within his or her custody or control.7 The temporary ERPO may generally only be in effect for up to 14 days, before the court holds a full hearing “as soon as reasonably possible” within that timeframe regarding whether to grant a longer ERPO.\n\nOnly State Attorney General or State's Attorney may request that the court issue an ex parte temporary ERPO.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "VT1061",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2023-07-01",
+       "notYetInEffect": false,
+       "citation": "Vt. Stat. Ann. tit. 13, §§ 4053, 4054",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "VT1049",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2023-07-01",
+       "notYetInEffect": false,
+       "citation": "Vt. Stat. Ann. tit. 13, § 4024 (a)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "WA": {
+   "name": "Washington",
+   "laws": {
+    "bgcheck": {
+     "status": "all",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WA1001",
+       "category": "background checks: private sales : point of sale",
+       "guns": "long gun",
+       "effective": "2014-12-04",
+       "notYetInEffect": false,
+       "citation": "Wash. Rev. Code Ann. § 9.41.113",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "WA1050",
+       "category": "background checks: private sales : point of sale",
+       "guns": "handgun",
+       "effective": "2014-12-04",
+       "notYetInEffect": false,
+       "citation": "Wash. Rev. Code Ann. § 9.41.113",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WA1083",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "1961-03-16",
+       "notYetInEffect": false,
+       "citation": "Wash. Rev. Code Ann. § 9.41.070",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "days",
+     "detail": "10 days (all guns)",
+     "evidence": [
+      {
+       "lawId": "WA1085",
+       "category": "waiting period: general",
+       "guns": "handgun and long gun",
+       "effective": "2024-01-01",
+       "notYetInEffect": false,
+       "citation": "Wash. Rev. Code Ann. § 9.41.092",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": "10"
+      }
+     ]
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 21 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "WA1011",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1994-07-01",
+       "notYetInEffect": false,
+       "citation": "Wash. Rev. Code Ann. § 9.41.080",
+       "note": "Wash. Rev. Code Ann. § 9.41.240 restricts access to semiautomatic firearms to those  21 or older.",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "WA1036",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2019-01-01",
+       "notYetInEffect": false,
+       "citation": "Wash. Rev. Code Ann. § 9.41.240",
+       "note": "",
+       "discrepancy": "",
+       "age": "21",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "expanded",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WA1029",
+       "category": "prohibited possessor: erpo : ex parte expanded",
+       "guns": "handgun and long gun",
+       "effective": "2016-12-08",
+       "notYetInEffect": false,
+       "citation": "Wash. Stat.  § 7.105.100 (recodified eff. July 1, 2022 by Laws 2021, ch. 215, §170 from Rev. Code Wash. § 7.94.030(1))",
+       "note": "Approved on November 8, 2016 and Washington law states that laws go into effect 90 days after passage which was about February 6th 2017.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WA1054",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "2019-07-01",
+       "notYetInEffect": false,
+       "citation": "West's RCWA 9.41.360",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "WI": {
+   "name": "Wisconsin",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "shall",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WI1007",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2011-07-23",
+       "notYetInEffect": false,
+       "citation": "Wis. Stat. § 175.60",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "WI1057",
+       "category": "carrying a concealed weapon (ccw): shall issue",
+       "guns": "handgun",
+       "effective": "2017-04-26",
+       "notYetInEffect": false,
+       "citation": "Wis. Stat. § 175.60 (2G)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "WI1017",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1989-07-01",
+       "notYetInEffect": false,
+       "citation": "Wis. Stat. § 948.60(2)(b)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "WI1066",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1989-07-01",
+       "notYetInEffect": false,
+       "citation": "Wis. Stat. § 948.60(2)(b)",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "child",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WI1011",
+       "category": "child access laws: negligent storage",
+       "guns": "handgun and long gun",
+       "effective": "1992-04-16",
+       "notYetInEffect": false,
+       "citation": "Wis. Stat. § 948.55(2)-(3)",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    }
+   }
+  },
+  "WV": {
+   "name": "West Virginia",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WV1005",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2016-05-24",
+       "notYetInEffect": false,
+       "citation": "W. Va. Code § 61-7-3",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "18",
+     "detail": "Handguns: 18 · Rifles/shotguns: 18",
+     "evidence": [
+      {
+       "lawId": "WV1011",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "1989-07-09",
+       "notYetInEffect": false,
+       "citation": "W. Va. Code §§ 61-7-10; 61-7-8",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      },
+      {
+       "lawId": "WV1030",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "1989-07-09",
+       "notYetInEffect": false,
+       "citation": "W. Va. Code §§ 61-7-10; 61-7-8",
+       "note": "",
+       "discrepancy": "",
+       "age": "18",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  },
+  "WY": {
+   "name": "Wyoming",
+   "laws": {
+    "bgcheck": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "carry": {
+     "status": "permitless",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WY1005",
+       "category": "carrying a concealed weapon (ccw): shall issue (permit not required)",
+       "guns": "handgun",
+       "effective": "2011-07-01",
+       "notYetInEffect": false,
+       "citation": "Wyo. Stat. § 6-8-104",
+       "note": "",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "waiting": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "age": {
+     "status": "none",
+     "detail": "",
+     "evidence": [
+      {
+       "lawId": "WY1030",
+       "category": "minimum age: purchase and sale",
+       "guns": "handgun",
+       "effective": "2010-03-11",
+       "notYetInEffect": false,
+       "citation": "W.S.1977 § 6-8-404(d)",
+       "note": "Applies only to handguns manufactured in Wyoming, so we do not treat it as setting a true minimum age of purchase under state law.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      },
+      {
+       "lawId": "WY1031",
+       "category": "minimum age: purchase and sale",
+       "guns": "long gun",
+       "effective": "2010-03-11",
+       "notYetInEffect": false,
+       "citation": "W.S.1977 § 6-8-404(d)",
+       "note": "Applies only to handguns manufactured in Wyoming, so we do not treat it as setting a true minimum age of purchase under state law.",
+       "discrepancy": "",
+       "age": "",
+       "waitDays": ""
+      }
+     ]
+    },
+    "erpo": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    },
+    "storage": {
+     "status": "none",
+     "detail": "",
+     "evidence": []
+    }
+   }
+  }
+ }
+}

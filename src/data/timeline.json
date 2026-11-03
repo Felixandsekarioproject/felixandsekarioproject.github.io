@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "checked": "2026-11-01",
+    "note": "Every event has an evidence quote that is checked word-for-word against a primary source by data/scripts/check_timeline.py. Death numbers are checked against the CDC data file."
+  },
+  "events": [
+    {
+      "id": "second-amendment",
+      "date": "1791-12-15",
+      "display": "December 15, 1791",
+      "type": "law",
+      "title": "The Second Amendment is ratified",
+      "text": "The states approve the Bill of Rights, the first ten amendments to the Constitution. The Second Amendment says: \"A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.\"",
+      "why": "For more than 200 years, people have argued about what this single sentence means. Supreme Court cases today still ask how gun laws compare with laws from this time.",
+      "sources": [
+        { "label": "National Archives: Bill of Rights transcript", "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript", "file": "timeline/archives-bill-of-rights.txt", "quote": "Ten of the proposed 12 amendments were ratified by three-fourths of the state legislatures on December 15, 1791." }
+      ]
+    },
+    {
+      "id": "nfa",
+      "date": "1934",
+      "display": "1934",
+      "type": "law",
+      "title": "National Firearms Act",
+      "text": "Congress passes a federal gun law that puts strict controls on machine guns and defines what counts as a \"machinegun\".",
+      "why": "This definition is still used today. In 2024, the Supreme Court case about bump stocks turned on the exact words written in 1934.",
+      "link": { "label": "You be the judge: Garland v. Cargill", "href": "/judge/cargill/" },
+      "sources": [
+        { "label": "Garland v. Cargill (2024), dissent", "url": "https://www.supremecourt.gov/opinions/23pdf/22-976_e29g.pdf", "file": "scotus/cargill-22-976_e29g.txt", "quote": "Congress has sharply restricted civilian ownership of machineguns since 1934." }
+      ]
+    },
+    {
+      "id": "miller",
+      "date": "1939",
+      "display": "1939",
+      "type": "court",
+      "title": "United States v. Miller",
+      "text": "The Supreme Court decides an early case about the Second Amendment and a federal gun law.",
+      "why": "In 2008, the Court explained in Heller how it reads Miller: the case is about which kinds of weapons are protected, not about whether only militia members are protected.",
+      "sources": [
+        { "label": "District of Columbia v. Heller (2008), syllabus", "url": "https://www.govinfo.gov/content/pkg/USREPORTS-554/pdf/USREPORTS-554-570.pdf", "file": "scotus/heller-554us570.txt", "quote": "does not limit the right to keep and bear arms to militia purposes, but rather limits the type of weapon to which the right applies to those used by the militia" }
+      ]
+    },
+    {
+      "id": "gca",
+      "date": "1968",
+      "display": "1968",
+      "type": "law",
+      "title": "Gun Control Act",
+      "text": "Congress creates a list of people who may not have guns under federal law, for example people convicted of serious crimes and fugitives from justice.",
+      "why": "Two recent Supreme Court cases, Rahimi (2024) and Hemani (2026), were about people on this list.",
+      "link": { "label": "You be the judge: United States v. Hemani", "href": "/judge/hemani/" },
+      "sources": [
+        { "label": "United States v. Hemani (2026)", "url": "https://www.supremecourt.gov/opinions/25pdf/24-1234_g2bh.pdf", "file": "scotus/hemani-24-1234_g2bh.txt", "quote": "The federal Gun Control Act prohibits various categories of people from possessing guns." }
+      ]
+    },
+    {
+      "id": "fopa",
+      "date": "1986-05-19",
+      "display": "May 19, 1986",
+      "type": "law",
+      "title": "Firearms Owners' Protection Act",
+      "text": "Congress eases some federal rules for gun owners. The same law bans civilians from getting new machine guns. Machine guns that were already legally owned are still allowed.",
+      "why": "It shows that one law can loosen some rules and tighten others at the same time.",
+      "sources": [
+        { "label": "Public Law 99-308 (Statutes at Large)", "url": "https://www.govinfo.gov/content/pkg/STATUTE-100/pdf/STATUTE-100-Pg449.pdf", "file": "timeline/fopa-pl99-308.txt", "quote": "it shall be unlawful for any person to transfer or possess a machinegun" },
+        { "label": "Public Law 99-308, approval date", "url": "https://www.govinfo.gov/content/pkg/STATUTE-100/pdf/STATUTE-100-Pg449.pdf", "file": "timeline/fopa-pl99-308.txt", "quote": "Approved May 19, 1986." }
+      ]
+    },
+    {
+      "id": "brady",
+      "date": "1994-02-28",
+      "display": "February 28, 1994",
+      "type": "law",
+      "title": "Brady Act: background checks begin",
+      "text": "Under the Brady Act, licensed gun dealers must check buyers' backgrounds. At first, there is also a five-day waiting period for handguns. In 1998, it is replaced by a national instant background check system (NICS).",
+      "why": "Federal background checks apply only to licensed dealers. Sales between private people are left to the states, which is one reason state laws differ so much.",
+      "link": { "label": "Compare state background-check laws", "href": "/laws/" },
+      "sources": [
+        { "label": "RAND State Firearm Law Database, methods", "url": "https://www.rand.org/pubs/tools/TLA243-2-v4.html", "file": "rand-state-firearm-law-db/RAND_TLA243-2-v4-methods.txt", "quote": "in effect from February 28, 1994, to November 30, 1998" },
+        { "label": "RAND State Firearm Law Database, methods", "url": "https://www.rand.org/pubs/tools/TLA243-2-v4.html", "file": "rand-state-firearm-law-db/RAND_TLA243-2-v4-methods.txt", "quote": "1998 (National Instant Criminal Background Check System)" }
+      ]
+    },
+    {
+      "id": "awb",
+      "date": "1994-09-13",
+      "display": "September 13, 1994 – 2004",
+      "type": "law",
+      "title": "Federal assault weapons ban (10 years)",
+      "text": "A federal law bans the making, sale and possession of certain semiautomatic weapons, and of magazines that hold more than ten rounds. It applies only to weapons made after the ban began. The ban ends on September 13, 2004.",
+      "why": "Since then, bans like this exist only in some states. In December 2026, the Supreme Court will hear a case about whether state bans on AR-15-style rifles are allowed.",
+      "sources": [
+        { "label": "RAND State Firearm Law Database, methods", "url": "https://www.rand.org/pubs/tools/TLA243-2-v4.html", "file": "rand-state-firearm-law-db/RAND_TLA243-2-v4-methods.txt", "quote": "from September 13, 1994, to September 13, 2004" },
+        { "label": "RAND State Firearm Law Database, methods", "url": "https://www.rand.org/pubs/tools/TLA243-2-v4.html", "file": "rand-state-firearm-law-db/RAND_TLA243-2-v4-methods.txt", "quote": "magazines that hold more than ten rounds of ammunition" }
+      ]
+    },
+    {
+      "id": "heller",
+      "date": "2008-06-26",
+      "display": "June 26, 2008",
+      "type": "court",
+      "title": "District of Columbia v. Heller",
+      "text": "The Supreme Court rules 5 to 4 that the Second Amendment protects an individual's right to have a handgun at home for self-defense.",
+      "why": "The Court said the right belongs to individual people, not only to members of a militia.",
+      "link": { "label": "You be the judge: Heller", "href": "/judge/heller/" },
+      "sources": [
+        { "label": "District of Columbia v. Heller (2008)", "url": "https://www.govinfo.gov/content/pkg/USREPORTS-554/pdf/USREPORTS-554-570.pdf", "file": "scotus/heller-554us570.txt", "quote": "Argued March 18, 2008—Decided June 26, 2008" }
+      ]
+    },
+    {
+      "id": "mcdonald",
+      "date": "2010",
+      "display": "2010",
+      "type": "court",
+      "title": "McDonald v. Chicago",
+      "text": "The Supreme Court rules that the Second Amendment limits state and local governments too, not only the federal government.",
+      "why": "Before this, it was unclear whether states had to respect the right described in Heller. After McDonald, state gun laws can be challenged under the Second Amendment.",
+      "sources": [
+        { "label": "Wolford v. Lopez (2026), syllabus", "url": "https://www.supremecourt.gov/opinions/25pdf/24-1046_nmio.pdf", "file": "scotus/wolford-24-1046_nmio.txt", "quote": "The Court later held in McDonald v. Chicago, 561 U. S. 742, that the Second Amendment right applies equally to the Federal" },
+        { "label": "United States v. Rahimi (2024)", "url": "https://www.supremecourt.gov/opinions/23pdf/22-915_8o6b.pdf", "file": "scotus/rahimi-22-915_8o6b.txt", "quote": "McDonald v. Chicago, 561 U. S. 742, 778 (2010)" }
+      ]
+    },
+    {
+      "id": "las-vegas",
+      "date": "2017-10-01",
+      "display": "October 1, 2017",
+      "type": "event",
+      "title": "Las Vegas shooting",
+      "text": "A shooter firing from a hotel room into an outdoor concert kills 58 people and wounds more than 500. He used rifles fitted with bump stocks.",
+      "why": "After this shooting, the federal government changed its rules on bump stocks, which led to a Supreme Court case in 2024.",
+      "sources": [
+        { "label": "Garland v. Cargill (2024), dissent", "url": "https://www.supremecourt.gov/opinions/23pdf/22-976_e29g.pdf", "file": "scotus/cargill-22-976_e29g.txt", "quote": "On October 1, 2017, a shooter opened fire from a hotel room overlooking an outdoor concert in Las Vegas, Nevada" },
+        { "label": "Garland v. Cargill (2024), dissent", "url": "https://www.supremecourt.gov/opinions/23pdf/22-976_e29g.pdf", "file": "scotus/cargill-22-976_e29g.txt", "quote": "the shooter killed 58 people and wounded over 500" }
+      ]
+    },
+    {
+      "id": "bump-rule",
+      "date": "2018",
+      "display": "2018",
+      "type": "law",
+      "title": "Federal rule treats bump stocks as machine guns",
+      "text": "The federal agency ATF issues a rule saying bump stocks count as machine guns under the 1934 law. Owners must destroy them or hand them in.",
+      "why": "In 2024, the Supreme Court decided that the agency had gone beyond what the law's words allow.",
+      "link": { "label": "You be the judge: Garland v. Cargill", "href": "/judge/cargill/" },
+      "sources": [
+        { "label": "Garland v. Cargill (2024)", "url": "https://www.supremecourt.gov/opinions/23pdf/22-976_e29g.pdf", "file": "scotus/cargill-22-976_e29g.txt", "quote": "ATF issued its final Rule in 2018." }
+      ]
+    },
+    {
+      "id": "deaths-2020",
+      "date": "2020",
+      "display": "2020",
+      "type": "data",
+      "title": "Gun deaths jump",
+      "text": "Gun deaths rise from 39,707 in 2019 to 45,222 in 2020, the biggest one-year increase in the years shown on this site.",
+      "why": "On its own, this data cannot tell us why deaths rose.",
+      "data": { "2019": 39707, "2020": 45222 },
+      "link": { "label": "See the trend on the map", "href": "/#map" },
+      "sources": [
+        { "label": "CDC/NCHS, Firearm Mortality by State", "url": "https://www.cdc.gov/nchs/state-stats/deaths/firearms.html", "file": "", "quote": "" }
+      ]
+    },
+    {
+      "id": "deaths-2021",
+      "date": "2021",
+      "display": "2021",
+      "type": "data",
+      "title": "Gun deaths reach a peak",
+      "text": "48,830 people die from gun injuries, the highest number in the years covered on this site.",
+      "why": "After 2021, the number goes down three years in a row, but it stays above every year from 2014 to 2019.",
+      "data": { "2021": 48830 },
+      "sources": [
+        { "label": "CDC/NCHS, Firearm Mortality by State", "url": "https://www.cdc.gov/nchs/state-stats/deaths/firearms.html", "file": "", "quote": "" }
+      ]
+    },
+    {
+      "id": "bruen",
+      "date": "2022-06-23",
+      "display": "June 23, 2022",
+      "type": "court",
+      "title": "New York State Rifle & Pistol Association v. Bruen",
+      "text": "The Supreme Court rules 6 to 3 that states may not require people to prove a special need before they can carry a handgun in public. It also creates a new test: gun laws must fit the nation's historical tradition.",
+      "why": "This history test changed how courts judge gun laws. The Court used it again in Rahimi (2024), Hemani (2026) and Wolford (2026).",
+      "link": { "label": "You be the judge: Bruen", "href": "/judge/bruen/" },
+      "sources": [
+        { "label": "NYSRPA v. Bruen (2022)", "url": "https://www.supremecourt.gov/opinions/21pdf/20-843_7j80.pdf", "file": "scotus/bruen-20-843_7j80.txt", "quote": "Argued November 3, 2021—Decided June 23, 2022" }
+      ]
+    },
+    {
+      "id": "bsca",
+      "date": "2022-06-25",
+      "display": "June 25, 2022",
+      "type": "law",
+      "title": "Bipartisan Safer Communities Act",
+      "text": "Congress passes a federal gun law that makes straw purchasing (buying a gun for someone who is not allowed to have one) and gun trafficking specific federal crimes. It extends the domestic-violence gun ban to dating partners, and gives states money for crisis programs, including red flag programs.",
+      "why": "It became law two days after the Bruen decision.",
+      "link": { "label": "Compare state red flag laws", "href": "/laws/" },
+      "sources": [
+        { "label": "Public Law 117-159", "url": "https://www.govinfo.gov/content/pkg/PLAW-117publ159/pdf/PLAW-117publ159.pdf", "file": "timeline/bsca-pl117-159.txt", "quote": "Approved June 25, 2022." },
+        { "label": "Public Law 117-159", "url": "https://www.govinfo.gov/content/pkg/PLAW-117publ159/pdf/PLAW-117publ159.pdf", "file": "timeline/bsca-pl117-159.txt", "quote": "section 932 (relating to straw purchasing), section 933 (relating to trafficking in firearms)" },
+        { "label": "Public Law 117-159", "url": "https://www.govinfo.gov/content/pkg/PLAW-117publ159/pdf/PLAW-117publ159.pdf", "file": "timeline/bsca-pl117-159.txt", "quote": "or by a person who has a current or recent former dating relationship with the victim" },
+        { "label": "Public Law 117-159", "url": "https://www.govinfo.gov/content/pkg/PLAW-117publ159/pdf/PLAW-117publ159.pdf", "file": "timeline/bsca-pl117-159.txt", "quote": "extreme risk protection order programs" }
+      ]
+    },
+    {
+      "id": "cargill",
+      "date": "2024-06-14",
+      "display": "June 14, 2024",
+      "type": "court",
+      "title": "Garland v. Cargill",
+      "text": "The Supreme Court rules 6 to 3 that a rifle with a bump stock is not a \"machinegun\" under the 1934 law, so the 2018 rule is invalid.",
+      "why": "The case was about the meaning of a law's words, not the Constitution. Congress can change the law if it wants to.",
+      "link": { "label": "You be the judge: Cargill", "href": "/judge/cargill/" },
+      "sources": [
+        { "label": "Garland v. Cargill (2024)", "url": "https://www.supremecourt.gov/opinions/23pdf/22-976_e29g.pdf", "file": "scotus/cargill-22-976_e29g.txt", "quote": "Argued February 28, 2024—Decided June 14, 2024" }
+      ]
+    },
+    {
+      "id": "rahimi",
+      "date": "2024-06-21",
+      "display": "June 21, 2024",
+      "type": "court",
+      "title": "United States v. Rahimi",
+      "text": "The Supreme Court rules 8 to 1 that a person whom a court has found to be a credible threat to someone else's safety can be temporarily disarmed.",
+      "why": "It explained that modern gun laws do not need an exact \"historical twin\" to pass the Bruen test.",
+      "link": { "label": "You be the judge: Rahimi", "href": "/judge/rahimi/" },
+      "sources": [
+        { "label": "United States v. Rahimi (2024)", "url": "https://www.supremecourt.gov/opinions/23pdf/22-915_8o6b.pdf", "file": "scotus/rahimi-22-915_8o6b.txt", "quote": "Argued November 7, 2023—Decided June 21, 2024" }
+      ]
+    },
+    {
+      "id": "deaths-2024",
+      "date": "2024",
+      "display": "2024",
+      "type": "data",
+      "title": "44,447 gun deaths",
+      "text": "Gun deaths fall for the third year in a row, to 44,447. That is still more than in any year from 2014 to 2019.",
+      "why": "These are the latest final numbers from CDC used on this site.",
+      "data": { "2024": 44447 },
+      "link": { "label": "Explore the map", "href": "/#map" },
+      "sources": [
+        { "label": "CDC/NCHS, Firearm Mortality by State", "url": "https://www.cdc.gov/nchs/state-stats/deaths/firearms.html", "file": "", "quote": "" }
+      ]
+    },
+    {
+      "id": "hemani",
+      "date": "2026-06-18",
+      "display": "June 18, 2026",
+      "type": "court",
+      "title": "United States v. Hemani",
+      "text": "All nine justices agree that a man could not be prosecuted for having a gun at home only because he regularly used marijuana.",
+      "why": "The Court called its decision narrow. It shows that the federal list of people who may not have guns can be challenged, one situation at a time.",
+      "link": { "label": "You be the judge: Hemani", "href": "/judge/hemani/" },
+      "sources": [
+        { "label": "United States v. Hemani (2026)", "url": "https://www.supremecourt.gov/opinions/25pdf/24-1234_g2bh.pdf", "file": "scotus/hemani-24-1234_g2bh.txt", "quote": "Argued March 2, 2026—Decided June 18, 2026" }
+      ]
+    },
+    {
+      "id": "wolford",
+      "date": "2026-06-25",
+      "display": "June 25, 2026",
+      "type": "court",
+      "title": "Wolford v. Lopez",
+      "text": "The Supreme Court rules 6 to 3 against a Hawaii law that banned permit holders from carrying guns onto private property open to the public (like stores or gas stations) unless the owner clearly allowed it.",
+      "why": "Owners can still say no to guns on their property. The Court ruled against making a ban on guns the automatic rule when the owner has said nothing.",
+      "sources": [
+        { "label": "Wolford v. Lopez (2026)", "url": "https://www.supremecourt.gov/opinions/25pdf/24-1046_nmio.pdf", "file": "scotus/wolford-24-1046_nmio.txt", "quote": "Argued January 20, 2026—Decided June 25, 2026" },
+        { "label": "Wolford v. Lopez (2026), syllabus", "url": "https://www.supremecourt.gov/opinions/25pdf/24-1046_nmio.pdf", "file": "scotus/wolford-24-1046_nmio.txt", "quote": "owners of establishments that are open to the public can admit or exclude persons who are carrying guns for self-defense" },
+        { "label": "Supreme Court docket 24-1046 (vote)", "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-1046.html", "file": "timeline/docket-24-1046.txt", "quote": "Kagan, J., filed a dissenting opinion. Jackson, J., filed a dissenting opinion, in which Sotomayor, J., joined." }
+      ]
+    },
+    {
+      "id": "ar15-case",
+      "date": "2026-12-02",
+      "display": "December 2, 2026 (upcoming)",
+      "type": "court",
+      "upcoming": true,
+      "title": "Coming up: Can states ban AR-15-style rifles?",
+      "text": "The Supreme Court will hear two cases together, Viramontes v. Cook County and Grant v. Higgins. The question: \"Whether the Second and Fourteenth Amendments guarantee the right to possess AR-15 platform and similar semiautomatic rifles.\" The decision has not been made yet.",
+      "why": "The answer could affect state laws that ban these rifles. Nobody, including us, knows the outcome yet.",
+      "sources": [
+        { "label": "Supreme Court docket 25-238", "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-238.html", "file": "timeline/docket-25-238.txt", "quote": "SET FOR ARGUMENT on Wednesday, December 2, 2026" },
+        { "label": "Question presented (No. 25-238)", "url": "https://www.supremecourt.gov/qp/25-00238qp.pdf", "file": "timeline/qp-25-238.txt", "quote": "Whether the Second and Fourteenth Amendments guarantee the right to possess AR-15 platform and similar semiautomatic rifles." },
+        { "label": "Question presented (No. 25-566)", "url": "https://www.supremecourt.gov/qp/25-00566qp.pdf", "file": "timeline/qp-25-566.txt", "quote": "25-566 GRANT V. HIGGINS" }
+      ]
+    }
+  ]
+}

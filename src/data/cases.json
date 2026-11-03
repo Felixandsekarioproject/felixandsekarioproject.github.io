@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "checked": "2026-11-01",
+    "note": "Facts, votes and quotes are taken from the official Supreme Court opinions (see data/raw/scotus/SOURCE.md). Every quote is checked word-for-word against the official text by data/scripts/check_cases.py."
+  },
+  "cases": [
+    {
+      "id": "heller",
+      "name": "District of Columbia v. Heller",
+      "year": 2008,
+      "decided": "June 26, 2008",
+      "citation": "554 U.S. 570 (2008)",
+      "kind": "Constitution (Second Amendment)",
+      "sourceFile": "heller-554us570.txt",
+      "opinionUrl": "https://www.govinfo.gov/content/pkg/USREPORTS-554/pdf/USREPORTS-554-570.pdf",
+      "teaser": "Can a city ban handguns in people's homes?",
+      "background": [
+        "In Washington, D.C., it was a crime to have a handgun that was not registered, and the city did not allow handguns to be registered. Any legal gun kept at home had to be unloaded and taken apart, or locked with a trigger lock.",
+        "Dick Heller was a special police officer in D.C. He applied to register a handgun that he wanted to keep at home. The city said no. Heller sued, arguing that the Second Amendment protected his right to keep a working handgun at home.",
+        "A federal appeals court agreed with Heller. D.C. then asked the Supreme Court to decide."
+      ],
+      "question": "Does the Second Amendment protect a right of individual people to keep a gun at home for self-defense, even if they are not part of a militia? And if so, is D.C.'s handgun ban allowed?",
+      "rule": "The Second Amendment says: \"A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.\" People had argued for a long time about what the first part (about the militia) means for the second part.",
+      "sides": [
+        { "label": "Heller's side", "text": "The right belongs to individual people. The words about the militia explain one purpose, but they do not limit the right. Self-defense at home is at the heart of the right, and banning the most popular gun for self-defense goes too far." },
+        { "label": "D.C.'s side", "text": "The Second Amendment protects the right to have guns for service in a militia, not for private self-defense. Even if it did protect self-defense, cities should be allowed to make reasonable rules to reduce gun violence." }
+      ],
+      "choices": [
+        "Individuals have a right to keep a handgun at home for self-defense. The ban is unconstitutional.",
+        "The right is only about militia service. The ban is allowed.",
+        "Individuals have a right, but the ban is still allowed as a reasonable safety rule."
+      ],
+      "actual": 0,
+      "outcome": {
+        "summary": "The Court ruled 5 to 4 for Heller. The Second Amendment protects an individual's right to have a gun, not connected to militia service, for lawful purposes such as self-defense at home. D.C.'s handgun ban and its rule that home guns must be kept unusable were unconstitutional.",
+        "vote": "5–4",
+        "author": "Justice Scalia",
+        "majority": ["Roberts", "Kennedy", "Thomas", "Alito"],
+        "dissent": ["Stevens", "Souter", "Ginsburg", "Breyer"],
+        "also": "The Court also said the right \"is not unlimited\". It said its decision did not cast doubt on long-standing bans on gun possession by people convicted of felonies or by people with mental illness, or on bans in sensitive places such as schools.",
+        "majorityQuote": { "text": "the enshrinement of constitutional rights necessarily takes certain policy choices off the table.", "who": "Justice Scalia, for the majority", "cite": "554 U.S., at 636" },
+        "otherQuote": { "text": "But a conclusion that the Second Amendment protects an individual right does not tell us anything about the scope of that right.", "who": "Justice Stevens, dissenting", "cite": "554 U.S., at 636" },
+        "otherSummary": "The dissenters disagreed for two reasons. Justice Stevens argued the Amendment is about militia service. Justice Breyer argued that even if it protects self-defense, D.C.'s law was a reasonable response to gun violence in a city."
+      },
+      "today": "Still the law. Later Supreme Court decisions, including Bruen (2022) and Hemani (2026), rely on Heller.",
+      "reflect": "Did you decide based on the words of the Constitution, on history, or on what you think would make people safer? The justices disagreed about which of these should matter most."
+    },
+    {
+      "id": "bruen",
+      "name": "New York State Rifle & Pistol Association v. Bruen",
+      "year": 2022,
+      "decided": "June 23, 2022",
+      "citation": "597 U.S. 1 (2022)",
+      "kind": "Constitution (Second Amendment)",
+      "sourceFile": "bruen-20-843_7j80.txt",
+      "opinionUrl": "https://www.supremecourt.gov/opinions/21pdf/20-843_7j80.pdf",
+      "teaser": "Can a state make you prove a special need before you carry a gun in public?",
+      "background": [
+        "In New York, you needed a license to carry a handgun outside your home. To get a full license, you had to show \"proper cause\": a special need for self-protection that is different from the needs of the general public. Wanting to protect yourself like anyone else was not enough.",
+        "Brandon Koch and Robert Nash were adults with no criminal problems. They applied for full licenses because they wanted to protect themselves. New York did not give them full licenses. They sued, arguing that this rule violated their Second Amendment rights.",
+        "This was a question about differences between states: according to the Court, 43 states gave carry licenses to anyone who met objective requirements. Six states, including New York, plus D.C. let officials require an extra special reason."
+      ],
+      "question": "Can a state require people to show a special need for self-defense before it lets them carry a handgun in public?",
+      "rule": "Heller (2008) said the Second Amendment protects an individual right. But it did not say exactly how courts should test gun laws. Most lower courts had been asking whether a law's safety benefits were important enough to justify limiting the right.",
+      "sides": [
+        { "label": "Koch and Nash's side", "text": "The right to bear arms includes carrying a gun in public for self-defense. Ordinary people should not have to prove they are in special danger to use a constitutional right." },
+        { "label": "New York's side", "text": "States have long regulated carrying guns in public, especially in crowded places. Requiring a good reason is a reasonable way to reduce gun violence, and courts should respect that choice." }
+      ],
+      "choices": [
+        "The special-need rule is unconstitutional.",
+        "The special-need rule is allowed.",
+        "It depends on the person. The rule is allowed for some people but not others."
+      ],
+      "actual": 0,
+      "outcome": {
+        "summary": "The Court ruled 6 to 3 that New York's rule was unconstitutional. It also set a new test for gun laws: if the Second Amendment's words cover what a person wants to do, the government must show that its law fits with the nation's \"historical tradition of firearm regulation.\" Courts should no longer weigh a law's safety benefits against the right.",
+        "vote": "6–3",
+        "author": "Justice Thomas",
+        "majority": ["Roberts", "Alito", "Gorsuch", "Kavanaugh", "Barrett"],
+        "dissent": ["Breyer", "Sotomayor", "Kagan"],
+        "also": "This new history-based test changed how courts across the country judge gun laws.",
+        "majorityQuote": { "text": "The constitutional right to bear arms in public for self-defense is not “a second-class right, subject to an entirely different body of rules than the other Bill of Rights guarantees.”", "who": "Justice Thomas, for the majority", "cite": "slip opinion, p. 62" },
+        "otherQuote": { "text": "Second, the Court wrongly limits its analysis to focus nearly exclusively on history.", "who": "Justice Breyer, dissenting", "cite": "slip opinion (Breyer, J., dissenting), p. 2" },
+        "otherSummary": "The dissent argued that courts should be able to consider the dangers of gun violence and the reasons for a law, not only history."
+      },
+      "today": "Still the law. The Court used and explained its history test again in Rahimi (2024) and Hemani (2026).",
+      "reflect": "Should judges decide gun cases by looking at history, or by weighing how much a law protects public safety? Each method has supporters and critics."
+    },
+    {
+      "id": "rahimi",
+      "name": "United States v. Rahimi",
+      "year": 2024,
+      "decided": "June 21, 2024",
+      "citation": "602 U.S. 680 (2024)",
+      "kind": "Constitution (Second Amendment)",
+      "sourceFile": "rahimi-22-915_8o6b.txt",
+      "opinionUrl": "https://www.supremecourt.gov/opinions/23pdf/22-915_8o6b.pdf",
+      "teaser": "Can the government take guns away from someone under a domestic violence restraining order?",
+      "background": [
+        "A federal law makes it a crime to have a gun while you are under certain domestic violence restraining orders. In this case, the order had to include a court's finding that the person is a \"credible threat\" to the physical safety of a partner or child.",
+        "In 2020, a Texas court gave such an order against Zackey Rahimi, after his girlfriend (called \"C. M.\" in the opinion) asked for protection. The court found that Rahimi was a credible threat to the safety of C. M. or their child. Rahimi had a chance to dispute her account but did not.",
+        "Later, police searched Rahimi's home and found a pistol, a rifle, ammunition, and a copy of the restraining order. He was charged under the federal law. After Bruen, a federal appeals court said the law was unconstitutional because the government had not shown a matching historical tradition."
+      ],
+      "question": "Under the Bruen history test, can the government disarm a person whom a court has found to be a credible threat to someone else's safety?",
+      "rule": "Under Bruen (2022), a gun law is allowed only if it fits with the nation's historical tradition of gun regulation. The question was how closely a modern law must match old laws.",
+      "sides": [
+        { "label": "The government's side", "text": "Since the founding, the law has allowed people who threaten others to be disarmed, for example through old \"surety\" and \"going armed\" laws. This modern law follows the same idea." },
+        { "label": "Rahimi's side", "text": "No law from the founding era took away guns in this exact way. Under Bruen, the government must show a real historical match, and it has not." }
+      ],
+      "choices": [
+        "The law is allowed. A person found to be a credible threat can be temporarily disarmed.",
+        "The law is unconstitutional, because there is no matching law from history.",
+        "The law is allowed only for people who have already been convicted of a crime."
+      ],
+      "actual": 0,
+      "outcome": {
+        "summary": "The Court ruled 8 to 1 that the law was constitutional as applied to Rahimi. Old laws do not need to be a \"historical twin\". It is enough that a modern law fits the principles behind the nation's tradition. Since the founding, people who threatened others with violence could be disarmed.",
+        "vote": "8–1",
+        "author": "Chief Justice Roberts",
+        "majority": ["Alito", "Sotomayor", "Kagan", "Gorsuch", "Kavanaugh", "Barrett", "Jackson"],
+        "dissent": ["Thomas"],
+        "also": "Five justices wrote separate opinions agreeing with the result, explaining their own views on how the history test should work.",
+        "majorityQuote": { "text": "An individual found by a court to pose a credible threat to the physical safety of another may be temporarily disarmed consistent with the Second Amendment.", "who": "Chief Justice Roberts, for the majority", "cite": "slip opinion, p. 17" },
+        "otherQuote": { "text": "Not a single historical regulation justifies the statute at issue", "who": "Justice Thomas, dissenting", "cite": "slip opinion (Thomas, J., dissenting), p. 1" },
+        "otherSummary": "Justice Thomas, who wrote Bruen, argued that the old laws the government pointed to worked differently, so the law failed the history test."
+      },
+      "today": "Still the law. The Court relied on Rahimi again in Hemani (2026).",
+      "reflect": "Rahimi shows that the history test does not always favor one side. Did the result surprise you after reading Bruen?"
+    },
+    {
+      "id": "cargill",
+      "name": "Garland v. Cargill",
+      "year": 2024,
+      "decided": "June 14, 2024",
+      "citation": "602 U.S. ___ (2024)",
+      "kind": "Meaning of a law (not the Constitution)",
+      "sourceFile": "cargill-22-976_e29g.txt",
+      "opinionUrl": "https://www.supremecourt.gov/opinions/23pdf/22-976_e29g.pdf",
+      "teaser": "Is a rifle with a \"bump stock\" a machine gun under federal law?",
+      "background": [
+        "Since 1934, federal law has strictly limited machine guns. The law defines a machine gun as a weapon that shoots \"automatically more than one shot, without manual reloading, by a single function of the trigger.\"",
+        "A normal semiautomatic rifle fires one shot each time the trigger is pulled. A \"bump stock\" is an attachment that uses the gun's recoil to help the shooter fire much faster, close to the speed of some machine guns.",
+        "For years, the federal agency in charge (ATF) said bump stocks were not machine guns. After a shooter used rifles with bump stocks to kill 58 people in Las Vegas in 2017, ATF changed its position and said they were machine guns. Owners had to destroy or hand them in. Michael Cargill handed in two bump stocks and then sued."
+      ],
+      "question": "Does a rifle with a bump stock fit the law's definition of a \"machinegun\"? (This is not about the Constitution. It is about what the words of a law mean.)",
+      "rule": "When a case is about a law passed by Congress, judges try to work out what the words of the law mean. If the agency's rule goes beyond what the law says, the rule is not valid.",
+      "sides": [
+        { "label": "The government's side", "text": "With a bump stock, one pull of the trigger starts a chain of rapid shots that keeps going as long as the shooter pushes forward. That works like a machine gun, which is what Congress wanted to ban." },
+        { "label": "Cargill's side", "text": "With a bump stock, the trigger still has to reset and be pressed again for every single shot. The bump stock only makes this happen faster. That does not match the law's words \"by a single function of the trigger.\"" }
+      ],
+      "choices": [
+        "A bump stock rifle is NOT a machine gun under this law, so ATF's rule is invalid.",
+        "A bump stock rifle IS a machine gun under this law, so ATF's rule is valid.",
+        "Bump stocks are protected by the Second Amendment."
+      ],
+      "actual": 0,
+      "outcome": {
+        "summary": "The Court ruled 6 to 3 that a rifle with a bump stock is not a \"machinegun\" as the law defines it. The trigger still has to be released and pressed again for every shot, so it does not fire more than one shot \"by a single function of the trigger.\" ATF had gone beyond what the law allowed.",
+        "vote": "6–3",
+        "author": "Justice Thomas",
+        "majority": ["Roberts", "Alito", "Gorsuch", "Kavanaugh", "Barrett"],
+        "dissent": ["Sotomayor", "Kagan", "Jackson"],
+        "also": "The case did not decide anything about the Second Amendment. In a separate opinion, Justice Alito wrote that \"Congress can amend the law\" if it wants bump stocks treated like machine guns.",
+        "majorityQuote": { "text": "A bump stock merely reduces the amount of time that elapses between separate “functions” of the trigger.", "who": "Justice Thomas, for the majority", "cite": "slip opinion, p. 12" },
+        "otherQuote": { "text": "When I see a bird that walks like a duck, swims like a duck, and quacks like a duck, I call that bird a duck.", "who": "Justice Sotomayor, dissenting", "cite": "slip opinion (Sotomayor, J., dissenting), p. 2" },
+        "otherSummary": "The dissent argued that the ordinary meaning of the law's words, and its purpose, cover a device that lets a shooter fire continuously with one pull of the trigger."
+      },
+      "today": "This decision explains what the 1934 law means. Congress can change the law. We have not checked whether Congress has done so since 2024.",
+      "reflect": "Here the question was not whether bump stocks should be allowed, but what the words of the law mean. Did you answer based on the words or on what you think the law should do?"
+    },
+    {
+      "id": "hemani",
+      "name": "United States v. Hemani",
+      "year": 2026,
+      "decided": "June 18, 2026",
+      "citation": "608 U.S. ___ (2026)",
+      "kind": "Constitution (Second Amendment)",
+      "sourceFile": "hemani-24-1234_g2bh.txt",
+      "opinionUrl": "https://www.supremecourt.gov/opinions/25pdf/24-1234_g2bh.pdf",
+      "teaser": "Can someone be prosecuted for owning a gun just because they use marijuana?",
+      "background": [
+        "Federal law bans anyone who is an \"unlawful user\" of a controlled substance from having a gun. Marijuana is still a controlled substance under federal law, even though many states allow it.",
+        "Ali Hemani, a U.S. citizen from Texas, kept a gun at home. During a 2022 search of his family's home, he cooperated: he handed over the gun, showed agents some marijuana, and said he used marijuana about every other day.",
+        "Based only on his marijuana use, the government charged him with having a gun while being an unlawful drug user. The government did not claim he was dangerous or had misused the gun. The lower courts dismissed the charge."
+      ],
+      "question": "Does prosecuting Mr. Hemani for having a gun at home, only because he regularly uses marijuana, violate the Second Amendment?",
+      "rule": "Under Bruen (2022) and Rahimi (2024), the government must show that its law is \"relevantly similar\" to laws in the nation's history, both in why it limits the right and in how.",
+      "sides": [
+        { "label": "The government's side", "text": "In early America, laws restricted \"habitual drunkards\". Regular drug users today are similar, and taking away their guns protects the public." },
+        { "label": "Hemani's side", "text": "The old laws targeted people whose drinking made them unable to manage their lives, and usually only after a court process. This law automatically disarms anyone who regularly uses any amount of an illegal drug, without showing they are dangerous." }
+      ],
+      "choices": [
+        "Prosecuting him is constitutional. Regular drug users can be banned from having guns.",
+        "Prosecuting him is unconstitutional, at least in his situation.",
+        "The whole law is unconstitutional for everyone it covers."
+      ],
+      "actual": 1,
+      "outcome": {
+        "summary": "All nine justices agreed that Mr. Hemani's prosecution was inconsistent with the Second Amendment. The old \"habitual drunkard\" laws were too different from this one in why and how they worked. The Court called its decision narrow. It did not strike down the whole law, and it did not decide cases involving addicts, people who are intoxicated, or proof that a person is dangerous.",
+        "vote": "9–0 (on the result)",
+        "author": "Justice Gorsuch",
+        "majority": ["Roberts", "Thomas", "Sotomayor", "Kavanaugh", "Barrett", "Jackson"],
+        "concurInJudgment": ["Alito", "Kagan"],
+        "dissent": [],
+        "also": "Justices Alito and Kagan agreed with the result but for different reasons, so they did not join the main opinion. Justice Thomas and Justice Jackson (joined by Justice Sotomayor) wrote separate concurring opinions.",
+        "majorityQuote": { "text": "In saying this much, we do not question that sometimes an individual’s unlawful use of marijuana (or any other controlled substance) may render him a danger to others.", "who": "Justice Gorsuch, for the majority", "cite": "slip opinion, p. 18" },
+        "otherQuote": { "text": "But I continue to believe that we veered off course in Bruen.", "who": "Justice Jackson, concurring", "cite": "slip opinion (Jackson, J., concurring), p. 1" },
+        "otherSummary": "There was no dissent. Justice Jackson agreed with the result under the Court's current test, but wrote that she still thinks the Bruen history test is the wrong approach."
+      },
+      "today": "Decided June 18, 2026. The Court said it was deciding only Mr. Hemani's situation, so other questions about this law are still open.",
+      "reflect": "The Court did not choose all or nothing. It decided only the question in front of it. Why might judges prefer narrow decisions?"
+    }
+  ]
+}
