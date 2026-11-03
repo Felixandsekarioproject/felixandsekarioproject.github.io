@@ -47,10 +47,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <footer className="site-footer">
           <div className="wrap">
-            <p className="help">
-              <strong>Need to talk to someone?</strong> In the US, call or text <strong>988</strong> (Suicide &amp; Crisis
-              Lifeline), free and open 24/7.
-            </p>
             <p>
               A school project. Death numbers come from the U.S. Centers for Disease Control and Prevention (CDC); state gun laws from the RAND State Firearm Law Database; court cases from official Supreme Court opinions. See{" "}
               <Link href="/sources/">sources and methods</Link>.
