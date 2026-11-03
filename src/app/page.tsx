@@ -128,7 +128,7 @@ export default function Home() {
           </div>
           <div className="card">
             <h3>You be the judge</h3>
-            <p>Decide five real Supreme Court gun cases, then see what the justices actually ruled.</p>
+            <p>Decide six real Supreme Court gun cases, then see what the justices actually ruled.</p>
             <p><Link prefetch={false} href="/judge/">Start with case 1 →</Link></p>
           </div>
           <div className="card">

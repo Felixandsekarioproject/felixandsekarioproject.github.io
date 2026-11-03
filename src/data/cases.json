@@ -169,6 +169,70 @@
       "reflect": "Here the question was not whether bump stocks should be allowed, but what the words of the law mean. Did you answer based on the words or on what you think the law should do?"
     },
     {
+      "id": "smith-wesson",
+      "name": "Smith & Wesson Brands, Inc. v. Estados Unidos Mexicanos",
+      "year": 2025,
+      "decided": "June 5, 2025",
+      "citation": "605 U.S. ___ (2025)",
+      "kind": "Meaning of a law (not the Constitution)",
+      "sourceFile": "smith-wesson-23-1141_lkgn.txt",
+      "opinionUrl": "https://www.supremecourt.gov/opinions/24pdf/23-1141_lkgn.pdf",
+      "teaser": "Can Mexico sue American gun makers over cartel violence?",
+      "background": [
+        "In 2005, Congress passed a law called the Protection of Lawful Commerce in Arms Act (PLCAA). It says that a lawsuit against a gun maker or seller over \"the criminal or unlawful misuse\" of a gun by someone else \"may not be brought\" in any court. There is an exception: a lawsuit can go ahead if the company \"knowingly violated\" a law about selling or marketing guns, and that helped cause the harm.",
+        "Mexico has very strict gun rules. The whole country has only one gun store. But the Mexican government says that as many as 90% of the guns found at crime scenes in Mexico came from the United States, where traffickers buy them, often illegally, and take them to drug cartels.",
+        "In 2021, Mexico sued seven American gun makers, including Smith & Wesson. It said the companies helped U.S. gun dealers sell guns illegally to traffickers: they kept supplying dealers they knew broke the law, they did not set rules for how their guns are sold, and they designed and marketed guns that appeal to cartels. The first court threw the lawsuit out, but an appeals court said it could go ahead. The gun makers asked the Supreme Court to decide."
+      ],
+      "question": "Does Mexico's lawsuit fit the exception? That depends on whether Mexico believably claimed that the gun makers \"aided and abetted\" (knowingly helped) illegal gun sales. If not, the 2005 law blocks the lawsuit. (This is not about the Constitution. It is about what a law passed by Congress means.)",
+      "rule": "To \"aid and abet\" a crime, a person must actively help and want the crime to succeed. Earlier cases said that an ordinary business is usually not responsible just because it knows some customers will misuse what it sells. At this early stage, Mexico did not have to prove its claims, but they had to be believable (\"plausible\"), not just possible.",
+      "sides": [
+        {
+          "label": "Mexico's side",
+          "text": "The companies know which dealers sell guns illegally to traffickers, but keep supplying them to make more money. They could easily set rules to stop illegal sales, but chose a \"see-no-evil, hear-no-evil, speak-no-evil approach\". That makes them partners in the dealers' crimes."
+        },
+        {
+          "label": "The gun makers' side",
+          "text": "We do not sell directly to any dealer, and Mexico does not name a single bad dealer or illegal sale. Making legal products that criminals also use is not helping a crime. Guns with Spanish names may appeal to \"millions of law-abiding Hispanic Americans\", not just cartels. The 2005 law was written to stop exactly this kind of lawsuit."
+        }
+      ],
+      "choices": [
+        "Mexico has not shown that the gun makers helped dealers break the law, so the 2005 law blocks the lawsuit.",
+        "By keeping on supplying dealers they know sell illegally, the gun makers helped break the law, so the lawsuit can go ahead.",
+        "Gun makers can never be sued over how their guns are used, no matter what they did."
+      ],
+      "actual": 0,
+      "outcome": {
+        "summary": "The Court ruled 9 to 0 for the gun makers. Mexico's complaint did not believably claim that the companies aided and abetted illegal sales. At most, it showed that they knew some unnamed dealers broke the law. The Court called that \"indifference\" rather than help. So the 2005 law blocks the lawsuit.",
+        "vote": "9–0",
+        "author": "Justice Kagan",
+        "majority": [
+          "Roberts",
+          "Thomas",
+          "Alito",
+          "Sotomayor",
+          "Gorsuch",
+          "Kavanaugh",
+          "Barrett",
+          "Jackson"
+        ],
+        "dissent": [],
+        "also": "The Court said its decision fits \"PLCAA's core purpose\": Congress passed the law to stop lawsuits that try to make gun makers pay for harm done by people who misuse guns. If Mexico's lawsuit fit the exception, the Court said, the exception \"would swallow most of the rule.\" The answer to choice 3 is no: the exception means gun makers can sometimes be sued, if they really did help break a gun sales law.",
+        "majorityQuote": {
+          "text": "A manufacturer of goods is not an accomplice to every unaffiliated retailer whom it fails to make follow the law.",
+          "who": "Justice Kagan, for the Court",
+          "cite": "slip opinion, p. 13"
+        },
+        "otherQuote": {
+          "text": "PLCAA reflects Congress’s view that the democratic process, not litigation, should set the terms of gun control.",
+          "who": "Justice Jackson, concurring",
+          "cite": "slip opinion (Jackson, J., concurring), p. 2"
+        },
+        "otherSummary": "No justice disagreed with the result. Justice Thomas and Justice Jackson each wrote a separate opinion agreeing with the Court. Justice Jackson said Mexico's real problem was that it never pointed to a specific broken law: it was asking courts to set rules for the gun industry that lawmakers and voters had chosen not to make. Justice Thomas said future courts should look at whether a company must first be found guilty of breaking a law before the exception can apply."
+      },
+      "today": "This decision explains what the 2005 law means, and Congress can change the law. We have not checked whether Congress has done so since 2025.",
+      "reflect": "Mexico has a serious problem with guns from the U.S., but the Court was not asked whether that is a problem. It was asked whether this lawsuit fits the words of a law. Should rules for gun makers come from lawsuits in court or from laws passed by lawmakers? What are the strengths of each?"
+    },
+    {
       "id": "hemani",
       "name": "United States v. Hemani",
       "year": 2026,
