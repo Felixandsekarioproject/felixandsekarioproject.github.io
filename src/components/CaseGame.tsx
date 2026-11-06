@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Case } from "@/lib/cases";
 
@@ -10,6 +10,16 @@ export default function CaseGame({ c, next }: { c: Case; next?: { id: string; na
   const [step, setStep] = useState<Step>("read");
   const [pick, setPick] = useState<number | null>(null);
   const [view, setView] = useState<"majority" | "other" | null>(null);
+  // When a step's button disappears, move keyboard and screen-reader focus to the new step's heading.
+  const focusNext = useRef(false);
+  const decideRef = useRef<HTMLHeadingElement>(null);
+  const revealRef = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (!focusNext.current) return;
+    focusNext.current = false;
+    (step === "decide" ? decideRef : step === "reveal" ? revealRef : null)?.current?.focus();
+  }, [step]);
+  const go = (s: Step) => { focusNext.current = true; setStep(s); };
 
   const o = c.outcome;
   const matched = pick === c.actual;
@@ -49,7 +59,7 @@ export default function CaseGame({ c, next }: { c: Case; next?: { id: string; na
         </div>
 
         {step === "read" && (
-          <button type="button" className="btn" onClick={() => setStep("decide")}>
+          <button type="button" className="btn" onClick={() => go("decide")}>
             I&apos;m ready to decide →
           </button>
         )}
@@ -58,7 +68,7 @@ export default function CaseGame({ c, next }: { c: Case; next?: { id: string; na
       {/* STEP 2 — decide */}
       {step !== "read" && (
         <section aria-labelledby="decide">
-          <h2 id="decide">You be the judge</h2>
+          <h2 id="decide" ref={decideRef} tabIndex={-1}>You be the judge</h2>
           <p>How do you think the Supreme Court decided? Pick one.</p>
           <fieldset className="choices" disabled={step === "reveal"}>
             <legend className="sr-only">Your prediction</legend>
@@ -75,7 +85,7 @@ export default function CaseGame({ c, next }: { c: Case; next?: { id: string; na
             })}
           </fieldset>
           {step === "decide" && (
-            <button type="button" className="btn" disabled={pick === null} onClick={() => setStep("reveal")}>
+            <button type="button" className="btn" disabled={pick === null} onClick={() => go("reveal")}>
               Show what the Court decided
             </button>
           )}
@@ -85,11 +95,11 @@ export default function CaseGame({ c, next }: { c: Case; next?: { id: string; na
       {/* STEP 3 — reveal */}
       {step === "reveal" && (
         <section aria-labelledby="reveal" className="reveal">
-          <h2 id="reveal">What the Court decided</h2>
+          <h2 id="reveal" ref={revealRef} tabIndex={-1}>What the Court decided</h2>
           <p className={matched ? "result match" : "result nomatch"} role="status">
             {matched
-              ? "Your prediction matches the Court's decision."
-              : "The Court decided differently from your prediction. That doesn't make your view \"wrong\". The justices themselves often disagree."}
+              ? "Your prediction matches the Court’s decision."
+              : "The Court decided differently from your prediction. That doesn’t make your view “wrong.” The justices themselves often disagree."}
           </p>
 
           <p>{o.summary}</p>

@@ -106,9 +106,9 @@ export default function LawExplorer({
   return (
     <div>
       {/* Topic tabs */}
-      <div className="topic-tabs" role="tablist" aria-label="Choose a law topic">
+      <div className="topic-tabs" role="group" aria-label="Choose a law topic">
         {policies.map((x) => (
-          <button key={x.id} type="button" role="tab" aria-selected={x.id === pid} onClick={() => setPid(x.id)}>
+          <button key={x.id} type="button" aria-pressed={x.id === pid} onClick={() => setPid(x.id)}>
             {x.title}
           </button>
         ))}

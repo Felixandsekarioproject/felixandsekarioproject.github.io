@@ -37,27 +37,27 @@ export default function Home() {
           more deaths per year than in 2014.
         </p>
 
-        <div className="stats">
+        <dl className="stats">
           <div className="stat">
-            <div className="stat-value">{fmt.int(total)}</div>
-            <div className="stat-label">gun deaths in {LATEST_YEAR}</div>
+            <dt className="stat-label">On an average day</dt>
+            <dd className="stat-value">~{perDay} deaths</dd>
           </div>
           <div className="stat">
-            <div className="stat-value">~{perDay}</div>
-            <div className="stat-label">deaths per day, on average</div>
+            <dt className="stat-label">Peak year, {peakYear}</dt>
+            <dd className="stat-value">{fmt.int(peak)}</dd>
           </div>
           <div className="stat">
-            <div className="stat-value">{fmt.int(nationalDeaths(2014))}</div>
-            <div className="stat-label">gun deaths in 2014, for comparison</div>
+            <dt className="stat-label">Ten years earlier, 2014</dt>
+            <dd className="stat-value">{fmt.int(nationalDeaths(2014))}</dd>
           </div>
-        </div>
+        </dl>
         <SourceNote />
       </section>
 
       <section className="section wrap narrow">
         <h2>Most gun deaths are not murders</h2>
         <p>
-          When people hear &quot;gun deaths,&quot; they often think of murders or mass shootings. But{" "}
+          When people hear “gun deaths,” they often think of murders or mass shootings. But{" "}
           <strong>more than half of all gun deaths in the U.S. are suicides</strong>, according to the CDC (2022
           data).
         </p>
@@ -66,7 +66,7 @@ export default function Home() {
           <li><strong>Suicide</strong>: a person uses a gun to end their own life.</li>
           <li><strong>Homicide</strong>: one person kills another person with a gun.</li>
           <li><strong>Accident</strong> (unintentional): for example, a child finds a loaded gun.</li>
-          <li><strong>Police shooting</strong> (&quot;legal intervention&quot;): a death caused by law enforcement.</li>
+          <li><strong>Police shooting</strong> (“legal intervention”): a death caused by law enforcement.</li>
           <li><strong>Unknown</strong> (undetermined): investigators could not tell what happened.</li>
         </ul>
         <p className="callout">
@@ -95,49 +95,57 @@ export default function Home() {
           <em>where</em> rates are high. They do not, on their own, explain <em>why</em>. States differ in many
           ways, such as how many people own guns, how rural they are, income, age of residents, and their laws.
         </p>
-        <div className="cards">
-          <div className="card">
+        <div className="rankings">
+          <div>
             <h3>Highest rates, {LATEST_YEAR}</h3>
-            <ol>
+            <ol className="rank-list">
               {top.map(({ s, p }) => (
                 <li key={s.code}>
-                  <Link prefetch={false} href={`/states/${s.code.toLowerCase()}/`}>{s.name}</Link>: {fmt.rate(p!.rate!)}
+                  <Link prefetch={false} href={`/states/${s.code.toLowerCase()}/`}>{s.name}</Link>
+                  <span className="rank-val">{fmt.rate(p!.rate!)}</span>
                 </li>
               ))}
             </ol>
           </div>
-          <div className="card">
+          <div>
             <h3>Lowest rates, {LATEST_YEAR}</h3>
-            <ol>
+            <ol className="rank-list">
               {bottom.map(({ s, p }) => (
                 <li key={s.code}>
-                  <Link prefetch={false} href={`/states/${s.code.toLowerCase()}/`}>{s.name}</Link>: {fmt.rate(p!.rate!)}
+                  <Link prefetch={false} href={`/states/${s.code.toLowerCase()}/`}>{s.name}</Link>
+                  <span className="rank-val">{fmt.rate(p!.rate!)}</span>
                 </li>
               ))}
             </ol>
-          </div>
-          <div className="card">
-            <h3>Gun laws by state</h3>
-            <p>Background checks, permits, waiting periods and more: see how the rules change across state lines.</p>
-            <p><Link prefetch={false} href="/laws/">Explore state gun laws →</Link></p>
-          </div>
-          <div className="card">
-            <h3>How we got here</h3>
-            <p>A timeline of gun laws and court decisions, from the Second Amendment in 1791 to today.</p>
-            <p><Link prefetch={false} href="/history/">See the timeline →</Link></p>
-          </div>
-          <div className="card">
-            <h3>You be the judge</h3>
-            <p>Decide six real Supreme Court gun cases, then see what the justices actually ruled.</p>
-            <p><Link prefetch={false} href="/judge/">Start with case 1 →</Link></p>
-          </div>
-          <div className="card">
-            <h3>Compare states yourself</h3>
-            <p>Pick up to four states and see how their rates changed over time.</p>
-            <p><Link prefetch={false} href="/compare/">Open the comparison tool →</Link></p>
           </div>
         </div>
         <p className="muted">Rates are gun deaths per 100,000 people, age-adjusted.</p>
+      </section>
+      <section className="section wrap" aria-labelledby="next">
+        <h2 id="next">Keep going</h2>
+        <p className="narrow">The site follows one path: first the numbers, then the laws and their history, then the arguments. Last, it is your turn to decide.</p>
+        <ol className="next-steps">
+          <li>
+            <Link prefetch={false} href="/compare/">Compare states yourself</Link>
+            <span>Pick up to four states and see how their rates changed over time.</span>
+          </li>
+          <li>
+            <Link prefetch={false} href="/laws/">Gun laws by state</Link>
+            <span>Background checks, permits, waiting periods and more, across state lines.</span>
+          </li>
+          <li>
+            <Link prefetch={false} href="/history/">How we got here</Link>
+            <span>A timeline of gun laws and court decisions, from 1791 to today.</span>
+          </li>
+          <li>
+            <Link prefetch={false} href="/disagreements/">Disagreements</Link>
+            <span>The NRA, Obama, Trump and Biden on guns and liberty. Which argument convinces you?</span>
+          </li>
+          <li>
+            <Link prefetch={false} href="/judge/">You be the judge</Link>
+            <span>Decide six real Supreme Court gun cases, then see what the justices ruled.</span>
+          </li>
+        </ol>
       </section>
     </>
   );

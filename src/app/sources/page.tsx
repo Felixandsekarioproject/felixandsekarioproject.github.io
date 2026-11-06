@@ -113,6 +113,39 @@ export default function SourcesPage() {
         computer check confirms that every quote appears word for word in the official text.
       </p>
 
+      <h2>Speeches and statements</h2>
+      <p>
+        The <a href="/disagreements/">Disagreements</a> page uses four primary sources. Each one shows one
+        political perspective, not a settled fact. Every quote was checked word for word against an official or
+        first-party transcript.
+      </p>
+      <ul>
+        <li>
+          LaPierre, Wayne (National Rifle Association). &ldquo;NRA Statement Following the Sandy Hook Elementary
+          School Shooting.&rdquo; 21 Dec. 2012. <em>Blair Academy US History Reader</em>, pp. 58&ndash;59.{" "}
+          <a href="https://www.americanhunter.org/content/nra-proposes-national-school-safety-program">Transcript (NRA, American Hunter)</a>.
+        </li>
+        <li>
+          Obama, Barack. &ldquo;Remarks on the Shooting at Umpqua Community College.&rdquo; 1 Oct. 2015.{" "}
+          <em>Blair Academy US History Reader</em>, pp. 56&ndash;57.{" "}
+          <a href="https://obamawhitehouse.archives.gov/the-press-office/2015/10/01/statement-president-shootings-umpqua-community-college-roseburg-oregon">Transcript (The White House, archived)</a>.
+        </li>
+        <li>
+          Trump, Donald. &ldquo;Remarks by President Trump on the Mass Shootings in Texas and Ohio.&rdquo; 5 Aug.
+          2019. The White House.{" "}
+          <a href="https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-mass-shootings-texas-ohio/">Transcript (archived)</a>.
+        </li>
+        <li>
+          Biden, Joe. &ldquo;Remarks on Signing the Bipartisan Safer Communities Act.&rdquo; 25 June 2022. The
+          American Presidency Project, UC Santa Barbara.{" "}
+          <a href="https://www.presidency.ucsb.edu/node/356599">Transcript</a>.
+        </li>
+        <li>
+          Portraits: Obama, Trump and Biden, official White House photos (public domain); LaPierre, photo by Gage
+          Skidmore, CC BY-SA 3.0, via Wikimedia Commons.
+        </li>
+      </ul>
+
       <h2>Our perspective</h2>
       <p>
         This project starts from one goal: fewer people should die from guns. That goal does not decide which

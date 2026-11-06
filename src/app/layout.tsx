@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import ScrollCalm from "@/components/ScrollCalm";
+import PaletteTry from "@/components/PaletteTry";
 
 const sans = Source_Sans_3({ variable: "--font-sans", subsets: ["latin"] });
 const serif = Source_Serif_4({ variable: "--font-serif", subsets: ["latin"] });
@@ -16,11 +17,17 @@ export const metadata: Metadata = {
     "How many people die from guns in the United States, and how states compare. Every number comes from official CDC data.",
 };
 
+export const viewport: Viewport = {
+  themeColor: "#faf9fb",
+  colorScheme: "light",
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <body>
         <ScrollCalm />
+        {process.env.NODE_ENV === "development" && <PaletteTry />}
         <a href="#main" className="skip-link">
           Skip to main content
         </a>
@@ -36,6 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <li><Link href="/compare/">Compare</Link></li>
                 <li><Link href="/laws/">Gun laws</Link></li>
                 <li><Link href="/history/">History</Link></li>
+                <li><Link href="/disagreements/">Disagreements</Link></li>
                 <li><Link href="/judge/">You be the judge</Link></li>
                 <li><Link href="/sources/">Sources</Link></li>
               </ul>
