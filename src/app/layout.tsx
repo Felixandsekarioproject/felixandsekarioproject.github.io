@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import ScrollCalm from "@/components/ScrollCalm";
-import PaletteTry from "@/components/PaletteTry";
 
 const sans = Source_Sans_3({ variable: "--font-sans", subsets: ["latin"] });
 const serif = Source_Serif_4({ variable: "--font-serif", subsets: ["latin"] });
@@ -27,7 +26,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <body>
         <ScrollCalm />
-        {process.env.NODE_ENV === "development" && <PaletteTry />}
         <a href="#main" className="skip-link">
           Skip to main content
         </a>
