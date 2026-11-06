@@ -3,10 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Case } from "@/lib/cases";
+import JudgeFinale, { saveResult, type CaseSummary } from "@/components/JudgeFinale";
 
 type Step = "read" | "decide" | "reveal";
 
-export default function CaseGame({ c, next }: { c: Case; next?: { id: string; name: string } }) {
+export default function CaseGame({ c, next, all }: { c: Case; next?: { id: string; name: string }; all: CaseSummary[] }) {
   const [step, setStep] = useState<Step>("read");
   const [pick, setPick] = useState<number | null>(null);
   const [view, setView] = useState<"majority" | "other" | null>(null);
@@ -85,7 +86,7 @@ export default function CaseGame({ c, next }: { c: Case; next?: { id: string; na
             })}
           </fieldset>
           {step === "decide" && (
-            <button type="button" className="btn" disabled={pick === null} onClick={() => go("reveal")}>
+            <button type="button" className="btn" disabled={pick === null} onClick={() => { saveResult(c.id, pick === c.actual); go("reveal"); }}>
               Show what the Court decided
             </button>
           )}
@@ -174,12 +175,11 @@ export default function CaseGame({ c, next }: { c: Case; next?: { id: string; na
             <button type="button" className="btn ghost" onClick={() => { setStep("read"); setPick(null); setView(null); window.scrollTo({ top: 0 }); }}>
               Try this case again
             </button>
-            {next ? (
+            {next && (
               <Link prefetch={false} className="btn" href={`/judge/${next.id}/`}>Next case: {next.name} →</Link>
-            ) : (
-              <Link prefetch={false} className="btn" href="/judge/">Back to all cases</Link>
             )}
           </div>
+          {!next && <JudgeFinale cases={all} />}
         </section>
       )}
     </div>

@@ -35,7 +35,15 @@ export default async function CasePage({ params }: PageProps<"/judge/[id]">) {
           <span className="pill">{c.kind}</span> <span className="muted">Supreme Court · {c.year}</span>
         </p>
       </header>
-      <CaseGame c={c} next={next ? { id: next.id, name: next.name } : undefined} />
+      <CaseGame
+        c={c}
+        next={next ? { id: next.id, name: next.name } : undefined}
+        all={cases.map((x) => ({
+          id: x.id,
+          short: x.id === "smith-wesson" ? "Smith & Wesson" : x.name.split(" v. ").pop()!,
+          split: x.outcome.dissent.length > 0,
+        }))}
+      />
       <p className="muted small" style={{ marginTop: 32 }}>
         All facts, votes and quotes come from the official Supreme Court opinion. Quotes are checked word-for-word
         against the official text. Last checked {casesMeta.checked}.

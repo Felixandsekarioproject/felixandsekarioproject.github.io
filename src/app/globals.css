@@ -362,6 +362,26 @@ main p { margin: 0 0 12px; }
 .finale .btn { background: var(--court); border-color: var(--court); color: var(--on-accent); margin-top: 8px; }
 .finale .btn:hover { background: oklch(46% 0.08 190); border-color: oklch(46% 0.08 190); }
 
+/* ---------- End of "You be the judge" ---------- */
+.judge-finale { margin: 48px 0 0; padding: 32px clamp(20px, 4vw, 40px) 28px; border-radius: 12px; background: oklch(97.6% 0.008 205); border: 1px solid oklch(90.5% 0.016 200); }
+.judge-finale .kicker { color: var(--court); }
+.judge-finale h2 { margin: 0 0 16px; font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: -0.015em; }
+.verdicts { list-style: none !important; padding: 0 !important; margin: 0 0 20px !important; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 560px) { .verdicts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.verdict { margin: 0 !important; }
+.verdict a { display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: center; padding: 10px 12px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; min-height: 44px; }
+.verdict a:hover { border-color: var(--court); }
+.verdict-mark { grid-row: span 2; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 0.85rem; font-variant-numeric: tabular-nums; border: 2px solid var(--court); color: var(--court); }
+.v-same .verdict-mark { background: var(--court); color: var(--on-accent); }
+.v-open .verdict-mark { border-color: var(--line); border-style: dashed; color: var(--muted); }
+.verdict-name { font-weight: 700; line-height: 1.2; }
+.verdict-state { font-size: 0.82rem; color: var(--muted); line-height: 1.3; }
+.finale-lead { color: var(--ink-2); }
+.finale-close { font-family: var(--serif); font-size: clamp(1.2rem, 2.6vw, 1.45rem); font-weight: 600; line-height: 1.35; color: var(--ink); margin: 20px 0 16px !important; text-wrap: balance; }
+.finale-links { list-style: none !important; padding: 0 !important; margin: 0 !important; display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.finale-links li { margin: 0 !important; }
+.finale-links a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+
 /* ---------- Scrolling performance ---------- */
 /* No map hover effects while the page is scrolling (see ScrollCalm.tsx). */
 html.scrolling .map-svg { pointer-events: none; }
