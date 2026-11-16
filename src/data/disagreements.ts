@@ -2,6 +2,9 @@
 // Every quotation below was checked word for word against an official or first-party transcript
 // (see the `check` field). Page numbers for Obama and LaPierre are from the Blair Academy US History Reader.
 
+/** Prefix for files in /public when the site lives in a sub-folder (GitHub Pages). */
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export type Person = {
   id: "obama" | "lapierre" | "trump" | "biden";
   name: string;
@@ -29,7 +32,7 @@ export const people: Person[] = [
     name: "Wayne LaPierre",
     role: "Executive vice president, National Rifle Association (NRA)",
     year: "2012",
-    photo: "/portraits/lapierre.jpg",
+    photo: `${BASE}/portraits/lapierre.jpg`,
     photoAlt: "Photo of Wayne LaPierre",
     photoCredit: "Photo by Gage Skidmore, CC BY-SA 3.0, via Wikimedia Commons",
     context:
@@ -59,7 +62,7 @@ export const people: Person[] = [
     name: "Barack Obama",
     role: "President of the United States",
     year: "2015",
-    photo: "/portraits/obama.jpg",
+    photo: `${BASE}/portraits/obama.jpg`,
     photoAlt: "Official portrait of President Barack Obama",
     photoCredit: "Official White House photo by Pete Souza (public domain)",
     context:
@@ -86,7 +89,7 @@ export const people: Person[] = [
     name: "Donald Trump",
     role: "President of the United States",
     year: "2019",
-    photo: "/portraits/trump.jpg",
+    photo: `${BASE}/portraits/trump.jpg`,
     photoAlt: "Official portrait of President Donald Trump, 2017",
     photoCredit: "Official White House photo by Shealah Craighead (public domain)",
     context:
@@ -115,7 +118,7 @@ export const people: Person[] = [
     name: "Joe Biden",
     role: "President of the United States",
     year: "2022",
-    photo: "/portraits/biden.jpg",
+    photo: `${BASE}/portraits/biden.jpg`,
     photoAlt: "Official portrait of President Joe Biden",
     photoCredit: "Official White House photo by Adam Schultz (public domain)",
     context:

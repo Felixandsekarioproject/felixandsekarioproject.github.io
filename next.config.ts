@@ -5,6 +5,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
+  // GitHub Pages serves the site under /<repo-name>/. Empty everywhere else (localhost, Vercel).
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
   turbopack: {
     root: process.cwd(),
     rules: {

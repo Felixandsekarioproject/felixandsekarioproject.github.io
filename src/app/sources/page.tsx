@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LATEST_YEAR, meta, nationalDeaths } from "@/lib/data";
+import Bibliography from "@/components/Bibliography";
 
 export const metadata: Metadata = { title: "Sources and methods" };
 
@@ -115,7 +117,7 @@ export default function SourcesPage() {
 
       <h2>Speeches and statements</h2>
       <p>
-        The <a href="/disagreements/">Disagreements</a> page uses four primary sources. Each one shows one
+        The <Link href="/disagreements/">Disagreements</Link> page uses four primary sources. Each one shows one
         political perspective, not a settled fact. Every quote was checked word for word against an official or
         first-party transcript.
       </p>
@@ -158,6 +160,14 @@ export default function SourcesPage() {
         We follow guidelines for safe reporting about suicide: no details about methods, and information about
         where to get help. In the U.S., you can call or text <strong>988</strong> at any time.
       </p>
+
+      <h2 id="bibliography">Bibliography</h2>
+      <p>
+        Every source used on this site, in MLA format (9th edition), in alphabetical order. Quotes from Obama
+        and LaPierre are cited to the <em>Blair Academy US History Reader</em>, with the official transcript we
+        checked them against.
+      </p>
+      <Bibliography />
     </div>
   );
 }

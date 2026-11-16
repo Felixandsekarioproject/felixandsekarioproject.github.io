@@ -82,7 +82,7 @@ export default async function StatePage({ params }: PageProps<"/states/[code]">)
         title={`Gun death rate in ${s.name} compared with the middle state, ${YEARS[0]} to ${LATEST_YEAR}`}
         yLabel="Deaths per 100,000"
         series={[
-          { label: s.name, color: "#4b2f86", points: s.series.map((p) => ({ year: p.year, value: p.rate })) },
+          { label: s.name, color: "#5b3fa0", points: s.series.map((p) => ({ year: p.year, value: p.rate })) },
           {
             label: "Middle state (median of 51)",
             color: "#8a8693",

@@ -8,7 +8,7 @@ import StatePicker from "./StatePicker";
 type Lite = { code: string; name: string; series: { year: number; rate: number | null; deaths: number | null }[] };
 
 // Four colors that are easy to tell apart, including for color-blind readers.
-const LINE_COLORS = ["#4b2f86", "#1b7f79", "#c4661f", "#55525c"];
+const LINE_COLORS = ["#5b3fa0", "#13917f", "#c4661f", "#2a78d6"]; // checked with the dataviz validator (all pairs, color-blind safe)
 const DEFAULT = ["TX", "CA", "FL", "NY"];
 const MAX = 4;
 

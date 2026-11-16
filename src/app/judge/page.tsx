@@ -26,7 +26,7 @@ export default function JudgeIndex() {
         <p className="callout">
           Good to know: the Supreme Court is not a trial. There is no jury and no new evidence. The justices decide
           what the law or the Constitution means. Many cases are decided by a close vote, so a different answer is
-          not necessarily &quot;wrong&quot;.
+          not necessarily &ldquo;wrong.&rdquo;
         </p>
       </div>
 

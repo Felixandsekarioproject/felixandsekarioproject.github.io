@@ -13,7 +13,7 @@ export function PerspectiveExplorer() {
 
   return (
     <>
-      <section aria-labelledby="voices">
+      <section aria-labelledby="voices" className="screen-only">
         <h2 id="voices">Four voices</h2>
         <p>Choose a person to see what they argued, and when.</p>
 
@@ -75,8 +75,8 @@ export function PerspectiveExplorer() {
       <section aria-labelledby="compare-h">
         <h2 id="compare-h">Side by side</h2>
         <p>
-          Short summaries of each statement, not facts about the world. The highlighted column is the person you
-          chose above; click a name to switch.
+          Short summaries of each statement, not facts about the world.{" "}
+          <span className="screen-only">The highlighted column is the person you chose above; click a name to switch.</span>
         </p>
         <div className="table-scroll">
           <table className="data-table compare-table">
@@ -118,7 +118,7 @@ export function Reflection() {
   const pos = positions.find((x) => x.id === pick);
 
   return (
-    <div className="think">
+    <div className="think screen-only">
       <h3>Which argument do you find more convincing?</h3>
       <div className="seg seg-wrap" role="group" aria-label="Choose an argument">
         {positions.map((x) => (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Timeline, { type TEvent } from "@/components/Timeline";
 import raw from "@/data/timeline.json";
 
@@ -25,7 +26,7 @@ export default function HistoryPage() {
         <p className="small">
           This timeline does not include every gun law or event. We chose moments that help explain today&apos;s
           laws, the state differences on this site, and the court cases in{" "}
-          <a href="/judge/">You be the judge</a>. Every fact is checked against an official source: the National
+          <Link href="/judge/">You be the judge</Link>. Every fact is checked against an official source: the National
           Archives, the U.S. Statutes at Large, Supreme Court opinions and dockets, the RAND State Firearm Law
           Database, and CDC data. Last checked {data.meta.checked}.
         </p>

@@ -58,8 +58,12 @@ export default function Home() {
         <h2>Most gun deaths are not murders</h2>
         <p>
           When people hear “gun deaths,” they often think of murders or mass shootings. But{" "}
-          <strong>more than half of all gun deaths in the U.S. are suicides</strong>, according to the CDC (2022
-          data).
+          <strong>more than half of all gun deaths in the U.S. are suicides</strong>, and about one in three are
+          homicides, according to the{" "}
+          <a href="https://www.cdc.gov/firearm-violence/data-research/facts-stats/index.html" target="_blank" rel="noreferrer">
+            CDC (2024 data)
+          </a>
+          .
         </p>
         <p>The total number of gun deaths is made up of several types. Each death is counted only once:</p>
         <ul>
@@ -90,8 +94,8 @@ export default function Home() {
       <section className="section wrap">
         <h2>Big differences between states</h2>
         <p className="narrow">
-          In {LATEST_YEAR}, the gun death rate in {top[0].s.name} was about{" "}
-          <strong>{Math.round(ratio)} times higher</strong> than in {bottom[0].s.name}. These numbers show{" "}
+          In {LATEST_YEAR}, the gun death rate in {top[0].s.name} was{" "}
+          <strong>{ratio.toFixed(1)} times as high</strong> as in {bottom[0].s.name}. These numbers show{" "}
           <em>where</em> rates are high. They do not, on their own, explain <em>why</em>. States differ in many
           ways, such as how many people own guns, how rural they are, income, age of residents, and their laws.
         </p>

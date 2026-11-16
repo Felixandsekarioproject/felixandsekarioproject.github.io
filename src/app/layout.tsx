@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import ScrollCalm from "@/components/ScrollCalm";
+import PrintPrep from "@/components/PrintPrep";
+import NavLinks from "@/components/NavLinks";
 
 const sans = Source_Sans_3({ variable: "--font-sans", subsets: ["latin"] });
 const serif = Source_Serif_4({ variable: "--font-serif", subsets: ["latin"] });
@@ -26,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <body>
         <ScrollCalm />
+        <PrintPrep />
         <a href="#main" className="skip-link">
           Skip to main content
         </a>
@@ -35,16 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               Guns in America<span className="brand-sub">: The Data</span>
             </Link>
             <nav aria-label="Main">
-              <ul>
-                <li><Link href="/#map">Map</Link></li>
-                <li><Link href="/states/">States</Link></li>
-                <li><Link href="/compare/">Compare</Link></li>
-                <li><Link href="/laws/">Gun laws</Link></li>
-                <li><Link href="/history/">History</Link></li>
-                <li><Link href="/disagreements/">Disagreements</Link></li>
-                <li><Link href="/judge/">You be the judge</Link></li>
-                <li><Link href="/sources/">Sources</Link></li>
-              </ul>
+              <NavLinks />
             </nav>
           </div>
         </header>
