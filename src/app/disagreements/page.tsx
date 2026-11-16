@@ -22,7 +22,8 @@ export default function DisagreementsPage() {
           <strong>How to read this page:</strong> <span className="label-tag tag-fact">Fact</span> dates and events,
           checked against sources. <span className="label-tag tag-arg">Argument</span> what each person claimed.{" "}
           <span className="label-tag tag-int">Interpretation</span> how they understand liberty.{" "}
-          <span className="label-tag tag-own">Analysis</span> this project&apos;s own reading.
+          <span className="label-tag tag-own">Analysis</span> this project&apos;s own reading.{" "}
+          <span className="label-tag tag-ours">Our opinion</span> what we think, at the end of the page.
         </p>
       </div>
 
@@ -68,6 +69,52 @@ export default function DisagreementsPage() {
             <Link prefetch={false} href="/judge/cargill/">Garland v. Cargill</Link>.
           </p>
         </details>
+      </section>
+
+      <section className="narrow our-view" aria-labelledby="ours">
+        <p className="kicker">Where we stand</p>
+        <h2 id="ours">Our opinion</h2>
+        <div className="opinion">
+          <p>
+            <span className="label-tag tag-ours">Our opinion</span> We think there is nothing wrong with owning a gun
+            to defend your home. We understand why people want that protection, and it should stay legal.
+          </p>
+          <p>
+            But we are against carrying guns in public and against military-style rifles. They go beyond what anyone
+            needs to protect their home.
+          </p>
+          <p className="opinion-core">
+            No freedom to own a gun is worth more than a human life. When the two collide, stopping gun violence
+            should come first.
+          </p>
+        </div>
+
+        <h3>How our opinion fits the law today</h3>
+        <ul className="fit-list">
+          <li>
+            <span className="label-tag tag-fact">Fact</span> <strong>It agrees with Heller (2008).</strong> The Supreme
+            Court ruled that the Second Amendment protects keeping a handgun at home for self-defense.{" "}
+            <Link prefetch={false} href="/judge/heller/">Decide Heller yourself →</Link>
+          </li>
+          <li>
+            <span className="label-tag tag-fact">Fact</span> <strong>It disagrees with Bruen (2022).</strong> The Court
+            ruled that the right also covers carrying a handgun in public, so a ban on public carry would likely be
+            struck down today.{" "}
+            <Link prefetch={false} href="/judge/bruen/">Decide Bruen yourself →</Link>
+          </li>
+          <li>
+            <span className="label-tag tag-fact">Fact</span> <strong>The rifle question is still open.</strong> In
+            December 2026, the Supreme Court will hear a case about whether states may ban AR-15-style rifles.{" "}
+            <Link prefetch={false} href="/history/">See the timeline →</Link>
+          </li>
+        </ul>
+
+        <p>
+          <span className="label-tag tag-own">Analysis</span> Our opinion is closest to Obama and Biden. Like Trump,
+          we also focus on stopping dangerous situations before they happen. The other side would answer that most
+          gun owners never hurt anyone, and that the need for self-defense does not end at the front door. The
+          Supreme Court agreed with that point in Bruen.
+        </p>
       </section>
 
       <section className="narrow" aria-labelledby="ds-sources">
