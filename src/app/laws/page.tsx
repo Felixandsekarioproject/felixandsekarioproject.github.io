@@ -19,9 +19,7 @@ export default function LawsPage() {
       </header>
 
       <div className="note narrow">
-        <strong>Laws as of {lawMeta.asOf}.</strong> Based on the RAND State Firearm Law Database. Laws passed
-        after that date are not included, and some laws may be blocked by courts. This is for learning, not legal
-        advice.
+        <strong>Laws as of {lawMeta.asOf}.</strong>
       </div>
 
       <LawExplorer policies={policies} states={lawStates} shapes={getShapes()} width={MAP_W} height={MAP_H} />

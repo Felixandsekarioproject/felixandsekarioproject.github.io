@@ -162,7 +162,7 @@ export default async function StatePage({ params }: PageProps<"/states/[code]">)
         </Link>
       </p>
       <p className="muted small">
-        Laws passed after {lawMeta.asOf} are not included. This is for learning, not legal advice.
+        Laws as of {lawMeta.asOf}.
       </p>
 
       <h2>All years</h2>
