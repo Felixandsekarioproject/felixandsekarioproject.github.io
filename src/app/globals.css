@@ -198,7 +198,7 @@ main p { margin: 0 0 12px; }
 
 /* ---------- Compare page ---------- */
 .compare { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 24px; align-items: start; }
-@media (max-width: 760px) { .compare { grid-template-columns: 1fr; gap: 8px; } }
+@media (max-width: 760px) { .compare { grid-template-columns: minmax(0, 1fr); gap: 8px; } }
 .compare-side { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; position: sticky; top: 12px; }
 @media (max-width: 760px) { .compare-side { position: static; } }
 .side-title { font-weight: 600; font-size: 0.9rem; color: var(--ink-2); margin: 0 0 8px; }

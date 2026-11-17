@@ -93,6 +93,10 @@ export const bibliography: BibEntry[] = [
     url: "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-mass-shootings-texas-ohio/",
   },
   {
+    text: "United States, Congress, House. *Condemning the Senseless Murder and Wounding of 18 People … in Roseburg, Oregon on October 1, 2015*. H. Con. Res. 85, 114th Congress, 1st session, introduced 8 Oct. 2015. *GovInfo*, U.S. Government Publishing Office, ",
+    url: "https://www.govinfo.gov/bulkdata/BILLS/114/1/hconres/BILLS-114hconres85ih.xml",
+  },
+  {
     text: "*United States v. Hemani*. No. 24-1234. Supreme Court of the United States, 18 June 2026. ",
     url: "https://www.supremecourt.gov/opinions/25pdf/24-1234_g2bh.pdf",
   },

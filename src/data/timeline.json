@@ -121,6 +121,20 @@
       ]
     },
     {
+      "id": "umpqua",
+      "date": "2015-10-01",
+      "display": "October 1, 2015",
+      "type": "event",
+      "title": "Umpqua Community College shooting",
+      "text": "A gunman opens fire at Umpqua Community College in Roseburg, Oregon, killing nine people and wounding nine others.",
+      "why": "President Obama spoke the same day and said the lack of new gun laws was \"a political choice that we make\". His speech is one of the four voices on the Disagreements page.",
+      "link": { "label": "See the Disagreements page", "href": "/disagreements/" },
+      "sources": [
+        { "label": "H.Con.Res. 85 (114th Congress)", "url": "https://www.govinfo.gov/bulkdata/BILLS/114/1/hconres/BILLS-114hconres85ih.xml", "file": "timeline/hconres85-114.txt", "quote": "on October 1, 2015, an armed gunman opened fire on the Umpqua Community College campus in Roseburg, Oregon, killing nine and wounding nine others" },
+        { "label": "President Obama, statement, October 1, 2015", "url": "https://obamawhitehouse.archives.gov/the-press-office/2015/10/01/statement-president-shootings-umpqua-community-college-roseburg-oregon", "file": "timeline/obama-umpqua-2015.txt", "quote": "This is a political choice that we make" }
+      ]
+    },
+    {
       "id": "las-vegas",
       "date": "2017-10-01",
       "display": "October 1, 2017",
